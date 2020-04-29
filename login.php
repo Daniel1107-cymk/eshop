@@ -394,44 +394,24 @@
 					<div class="col-lg-6 col-12">
 						<div class="my__account__wrapper">
 							<h3 class="account__title">Login</h3>
-							<form action="#">
+							<form method="POST" action="func/check_login.php">
 								<div class="account__form">
 									<div class="input__box">
 										<label>Username or email address <span>*</span></label>
-										<input type="text">
+										<input type="text" name="username">
 									</div>
 									<div class="input__box">
 										<label>Password<span>*</span></label>
-										<input type="text">
+										<input type="text" name="password">
 									</div>
 									<div class="form__btn">
-										<button>Login</button>
+										<button type="submit" value="Login">Login</button>
 										<label class="label-for-checkbox">
 											<input id="rememberme" class="input-checkbox" name="rememberme" value="forever" type="checkbox">
 											<span>Remember me</span>
 										</label>
 									</div>
 									<a class="forget_pass" href="#">Lost your password?</a>
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="col-lg-6 col-12">
-						<div class="my__account__wrapper">
-							<h3 class="account__title">Register</h3>
-							<form action="#">
-								<div class="account__form">
-									<div class="input__box">
-										<label>Email address <span>*</span></label>
-										<input type="email">
-									</div>
-									<div class="input__box">
-										<label>Password<span>*</span></label>
-										<input type="password">
-									</div>
-									<div class="form__btn">
-										<button>Register</button>
-									</div>
 								</div>
 							</form>
 						</div>
