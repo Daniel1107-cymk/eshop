@@ -1,6 +1,6 @@
 <?php 
+require_once('koneksi.php');
 session_start();
-include 'koneksi.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
 $data = mysqli_query($koneksi,"select * from login where username='$username' and password='$password'");
@@ -19,7 +19,7 @@ if($cek > 0){
 	$_SESSION['member_id'] = $row['member_id'];
 
 
-	header("location:../index.php");
+	header("location:../home_page.php");
 }else{
 	header("location:../login.php");
 }
