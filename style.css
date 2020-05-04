@@ -1802,7 +1802,7 @@ Header Styles
       line-height: 35px;
       width: 24px; }
 	  .header__area .header__sidebar__right > li.wishlist > a {
-      background: rgba(0, 0, 0, 0) url("images/icons/button-wishlist.png") no-repeat scroll 0 center;
+      background: rgba(0, 0, 0, 0) url("images/icons/search.png") no-repeat scroll 0 center;
       height: 100%;
       line-height: 35px;
       width: 24px; }
@@ -1910,7 +1910,7 @@ Header Styles
   background: rgba(0, 0, 0, 0) url("images/icons/search_white.png") no-repeat scroll 0 center;
 }
 .oth-page.header__area .header__sidebar__right > li.wishlist > a {
-  background: rgba(0, 0, 0, 0) url("images/icons/button-wishlist_white.png") no-repeat scroll 0 center;
+  background: rgba(0, 0, 0, 0) url("images/icons/search_white.png") no-repeat scroll 0 center;
 }
 .oth-page.header__area .header__sidebar__right > li.setting__bar__icon > a {
   background: transparent url("images/icons/icon_setting_white.png") no-repeat scroll left center;
@@ -3326,6 +3326,7 @@ h3.widget-title-modal {
 }
 .header__area .header__sidebar__right > li.shopcart {
   padding-right: 10px;
+  padding-left: 10px;
 }
 .newsletter__block p {
   padding: 0 50px 60px;
@@ -4674,9 +4675,9 @@ h3.widget-title-modal {
   text-align: center;
   text-transform: capitalize;
 }
-  .gallery__menu button {
+.gallery__menu button {
     background: #fff none repeat scroll 0 0;
-    color: color: #333;
+    color: #333;
     border: medium none;
     display: inline-block;
     font-size: 12px;
@@ -5753,7 +5754,7 @@ a.checkout__title {
       .wedget__categories.poroduct--cat ul li a:hover {
         color: #e59285; }
       .wedget__categories.poroduct--cat ul li a span {
-        color: ##333;
+        color: #333;
         float: right; }
 .wedget__categories.pro--range {
   margin: 0 0 30px; }

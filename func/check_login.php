@@ -19,8 +19,8 @@ if($cek > 0){
 	$_SESSION['member_id'] = $row['member_id'];
 
 
-	header("location:../home_page.php");
+	header("location:../users/index.php");
 }else{
-	header("location:../login.php");
+	header("location:../login_page.php");
 }
 ?>
