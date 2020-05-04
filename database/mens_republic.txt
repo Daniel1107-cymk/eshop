@@ -1,0 +1,108 @@
+-- create database --
+create database sepatu;
+-- create table --
+create table gudang(
+	id_stock int primary key AUTO_INCREMENT,
+    nama varchar(100),
+    deskripsi text,
+    kategori text,
+    quantity int,
+    harga_unit float
+);
+create table status_member(
+	id_status_member int primary key,
+    nama_status_member varchar(50)
+);
+create table member(
+	id_member int primary KEY AUTO_INCREMENT,
+    username varchar(100),
+    password varchar(100),
+    nama varchar(100),
+    id_status_member int,
+    alamat varchar(100),
+    email varchar(100),
+    tanggal_lahir date,
+    FOREIGN key (id_status_member) REFERENCES status_member(id_status_member)
+);
+create table status_order(
+	id_status_order int PRIMARY KEY,
+    nama_status_order varchar(50)
+);
+CREATE TABLE order_list(
+	id_order int primary key AUTO_INCREMENT,
+    deskripsi text,
+    id_member int,
+    id_stock int,
+    id_status_order int,
+    tanggal_order date,
+    tanggal_kirim date,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
+    FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
+);
+create table cart(
+	id_member int,
+    id_stock int,
+    id_status_order int,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
+    FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
+);
+create table invoice(
+	id_invoice int primary key AUTO_INCREMENT,
+    kode_invoice text,
+    id_member int,
+    id_order int,
+    id_stock int,
+    qty int,
+    total_harga int,
+    tanggal date,
+    FOREIGN key (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_order) REFERENCES order_list(id_order),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock)
+);
+create table status_kirim(
+	id_status_kirim int PRIMARY KEY,
+    nama_status_kirim varchar(50)
+);
+create table status_trans(
+	id_status_trans int PRIMARY KEY,
+    nama_status_trans varchar(50)
+);
+create table resi(
+	id_resi int PRIMARY key AUTO_INCREMENT,
+    nomor_resi int,
+    id_member int,
+    id_status_kirim int,
+   	id_status_trans int,
+    total_harga float,
+    tanggal_trans date,
+    FOREIGN key (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_status_kirim) REFERENCES status_kirim(id_status_kirim),
+    FOREIGN KEY (id_status_trans) REFERENCES status_trans(id_status_trans)
+);
+create TABLE histori_trans(
+	id_histori_trans int PRIMARY KEY AUTO_INCREMENT,
+    deskripsi text,
+    id_resi int,
+    id_stock int,
+    id_member int,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN key (id_resi) REFERENCES resi(id_resi),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock)
+);
+
+-- insert data status --
+insert into status_member
+VALUES	(101, 'Aktif'),
+		(102, 'Non Aktif');
+insert into status_order
+VALUES (101, 'Belum Bayar'),
+		(102, 'Kirim'),
+        (103, 'selesai');
+insert into status_kirim
+VALUES (101, 'Kirim'),
+		(102, 'Terkirim');
+insert into status_trans
+VALUES (101, 'Proses'),
+		(102, 'Selesai');
