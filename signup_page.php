@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Sign In</title>
+	<title>Sign Up</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -161,18 +161,34 @@
 					<div class="col-lg-8">
 						<div class="my__account__wrapper">
 							<h3 class="account__title">Sign Up</h3>
-							<form method="POST" action="func/check_login.php">
+							<form method="POST" action="func/sign_up.php">
 								<div class="account__form">
 									<div class="input__box">
-										<label>Username or email address <span>*</span></label>
+										<label>Username<span>*</span></label>
 										<input type="text" name="username">
 									</div>
 									<div class="input__box">
 										<label>Password<span>*</span></label>
 										<input type="password" name="password">
 									</div>
+									<div class="input__box">
+										<label>Nama Lengkap<span>*</span></label>
+										<input type="text" name="nama_lengkap">
+									</div>
+									<div class="input__box">
+										<label>Tanggal Lahir<span>*</span></label>
+										<input type="date" name="tanggal_lahir">
+									</div>
+									<div class="input__box">
+										<label>Alamat<span>*</span></label>
+										<input type="text" name="alamat">
+									</div>
+									<div class="input__box">
+										<label>Email<span>*</span></label>
+										<input type="email" name="email">
+									</div>
 									<div class="form__btn">
-										<button type="submit" value="Login">Login</button>	
+										<button type="submit" value="signup">Sign Up</button>	
 									</div>
 								</div>
 							</form>
