@@ -31,10 +31,6 @@
 </head>
 
 <body>
-	<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
-
 	<!-- Main wrapper -->
 	<div class="wrapper" id="wrapper">
 		<!-- Header -->
@@ -52,24 +48,6 @@
 						<nav class="mainmenu__nav">
 							<ul class="meninmenu d-flex justify-content-start">
 								<li class="drop with--one--item"><a href="index.php">Home</a></li>
-								<li class="drop"><a href="#">Shop</a>
-									<div class="megamenu mega03">
-										<ul class="item item03">
-											<li class="title">Shop Layout</li>
-											<li><a href="shop-grid.html">Shop Grid</a></li>
-											<li><a href="single-product.html">Single Product</a></li>
-										</ul>
-										<ul class="item item03">
-											<li class="title">Shop Page</li>
-											<li><a href="my-account.html">My Account</a></li>
-											<li><a href="cart.html">Cart Page</a></li>
-											<li><a href="checkout.html">Checkout Page</a></li>
-											<li><a href="wishlist.html">Wishlist Page</a></li>
-											<li><a href="error404.html">404 Page</a></li>
-											<li><a href="faq.html">Faq Page</a></li>
-										</ul>
-									</div>
-								</li>
 							</ul>
 						</nav>
 					</div>
@@ -85,8 +63,7 @@
 											<div class="switcher-options">
 												<div class="switcher-currency-trigger">
 													<div class="setting__menu">
-														<span><a href="login_page.php">Sign Up</a></span>
-														<span><a href="signup_page.php">Create An Account</a></span>
+														<span><a href="login_page.php">Sign In</a></span>
 													</div>
 												</div>
 											</div>
@@ -103,12 +80,6 @@
 						<nav class="mobilemenu__nav">
 							<ul class="meninmenu">
 								<li><a href="index.php">Home</a></li>
-								<li><a href="#">Shop</a>
-									<ul>
-										<li><a href="shop-grid.html">Shop Grid</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-									</ul>
-								</li>
 							</ul>
 						</nav>
 					</div>
@@ -190,6 +161,7 @@
 									<div class="form__btn">
 										<button type="submit" value="signup">Sign Up</button>	
 									</div>
+									<a class="forget_pass" href="login_page.php">Sign In</a>
 								</div>
 							</form>
 						</div>

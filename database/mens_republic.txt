@@ -1,13 +1,25 @@
 -- create database --
 create database sepatu;
 -- create table --
+create table kategori(
+	id_kategori int primary key,
+    nama_kategori varchar(20)
+);
+create table tipe_item(
+	id_tipe_item int primary KEY,
+    nama_tipe_item varchar(100)
+);
 create table gudang(
 	id_stock int primary key AUTO_INCREMENT,
-    nama varchar(100),
+    nama_item varchar(100),
     deskripsi text,
-    kategori text,
+    id_kategori int,
+	id_tipe_item int,
     quantity int,
-    harga_unit float
+    harga_unit float,
+	gambar varchar(255),
+    FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori),
+    FOREIGN KEY (id_tipe_item) REFERENCES tipe_item(id_tipe_item)
 );
 create table status_member(
 	id_status_member int primary key,
@@ -92,7 +104,13 @@ create TABLE histori_trans(
     FOREIGN KEY (id_stock) REFERENCES gudang(id_stock)
 );
 
--- insert data status --
+-- insert data --
+insert into kategori
+VALUES (111, 'Male'),
+		(222, 'Female');
+INSERT INTO tipe_item
+VALUES (101, 'Sneakers'),
+		(102, 'Sandals');
 insert into status_member
 VALUES	(101, 'Aktif'),
 		(102, 'Non Aktif');

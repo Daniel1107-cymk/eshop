@@ -9,7 +9,11 @@
 		$_SESSION['username'] = $username;
 		$_SESSION['login_type'] = 'user';
 		$_SESSION['status'] = 'login';
-        header("location:../users/index.php");
+        if($username == 'admin'){
+            header('location:../users/admin_page.php');
+        }else{
+            header('location:../users/index.php');
+        }
     }else{
         echo "<script type='text/javascript'> 
         alert('Username dan Password Salah'); 
