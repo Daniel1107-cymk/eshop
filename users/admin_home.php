@@ -18,23 +18,6 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
                 <div class="my__account__wrapper">
-                    <h3 class="account__title">Sign in</h3>
-                    <form method="POST" action="func/check_login.php">
-                        <div class="account__form">
-                            <div class="input__box">
-                                <label>Username or email address <span>*</span></label>
-                                <input type="text" name="username">
-                            </div>
-                            <div class="input__box">
-                                <label>Password<span>*</span></label>
-                                <input type="password" name="password">
-                            </div>
-                            <div class="form__btn">
-                                <button type="submit" value="Login">Login</button>
-                            </div>
-                            <a class="forget_pass" href="signup_page.php">Create New Account</a>
-                        </div>
-                    </form>
                 </div>
             </div>
             <div class="col-lg-2"></div>
