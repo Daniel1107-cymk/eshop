@@ -1,0 +1,275 @@
+create table kategori(
+	id_kategori int primary key,
+    nama_kategori varchar(20)
+);
+create table tipe_item(
+	id_tipe_item int primary KEY,
+    nama_tipe_item varchar(100)
+);
+create table gudang(
+	id_stock SERIAl PRIMARY KEY,
+    nama_item varchar(100),
+    deskripsi text,
+    id_kategori int,
+	id_tipe_item int,
+    quantity int,
+    harga_unit float,
+	gambar varchar(255),
+    FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori),
+    FOREIGN KEY (id_tipe_item) REFERENCES tipe_item(id_tipe_item)
+);
+create table status_member(
+	id_status_member int primary key,
+    nama_status_member varchar(50)
+);
+create table member(
+	id_member SERIAl PRIMARY KEY,
+    nama varchar(100),
+    id_status_member int,
+    alamat varchar(100),
+    email varchar(100),
+    tanggal_lahir date,
+    FOREIGN key (id_status_member) REFERENCES status_member(id_status_member)
+);
+create table login(
+	login_id SERIAl primary key,
+    username varchar(100),
+	password varchar(100),
+	id_member int,
+	is_admin boolean,
+	FOREIGN KEY (id_member) REFERENCES member(id_member)
+);
+
+create table status_order(
+	id_status_order int PRIMARY KEY,
+    nama_status_order varchar(50)
+);
+CREATE TABLE order_list(
+	id_order SERIAl PRIMARY KEY,
+    deskripsi text,
+    id_member int,
+    id_stock int,
+    id_status_order int,
+    tanggal_order date,
+    tanggal_kirim date,
+	total FLOAT,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
+    FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
+);
+create table cart(
+	id_cart SERIAl PRIMARY KEY,
+	id_order int,
+	id_member int,
+    id_stock int,
+    id_status_order int,
+	quantity int,
+	harga_unit FLOAT,
+	sub_total FLOAT,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
+	FOREIGN KEY (id_order) REFERENCES order_list(id_order),
+    FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
+);
+create table invoice(
+	id_invoice SERIAl PRIMARY KEY,
+    kode_invoice text,
+    id_member int,
+    id_order int,
+    total_harga int,
+    tanggal date,
+    FOREIGN key (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_order) REFERENCES order_list(id_order)
+);
+create table status_kirim(
+	id_status_kirim int PRIMARY KEY,
+    nama_status_kirim varchar(50)
+);
+create table status_trans(
+	id_status_trans int PRIMARY KEY,
+    nama_status_trans varchar(50)
+);
+create table resi(
+	id_resi SERIAl PRIMARY KEY,
+    nomor_resi int,
+    id_member int,
+    id_status_kirim int,
+   	id_status_trans int,
+    total_harga float,
+    tanggal_trans date,
+    FOREIGN key (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_status_kirim) REFERENCES status_kirim(id_status_kirim),
+    FOREIGN KEY (id_status_trans) REFERENCES status_trans(id_status_trans)
+);
+create TABLE histori_trans(
+	id_histori_trans SERIAl PRIMARY KEY,
+    deskripsi text,
+    id_resi int,
+    id_stock int,
+    id_member int,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN key (id_resi) REFERENCES resi(id_resi),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock)
+);
+
+-- insert data --
+insert into kategori
+VALUES (111, 'Male'),
+		(222, 'Female');
+INSERT INTO tipe_item
+VALUES (101, 'Sneakers'),
+		(102, 'Sandals');
+insert into status_member
+VALUES	(101, 'Aktif'),
+		(102, 'Non Aktif');
+insert into status_order
+VALUES (101, 'Belum Bayar'),
+		(102, 'Kirim'),
+        (103, 'selesai');
+insert into status_kirim
+VALUES (101, 'Kirim'),
+		(102, 'Terkirim');
+insert into status_trans
+VALUES (101, 'Proses'),
+		(102, 'Selesai');
+		
+CREATE PROCEDURE create_login(VARCHAR, VARCHAR, INT, Boolean)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO login VALUES
+	('',$1,$2,$3,$4);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_member(VARCHAR, INT, VARCHAR, VARCHAR, DATE)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO member VALUES
+	('',$1,$2,$3,$4,$5);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_kategori(INT, VARCHAR)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO kategori VALUES
+	($1,$2);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_tipe_item(INT, VARCHAR)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO tipe_item VALUES
+	($1,$2);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_gudang(VARCHAR, TEXT, INT, INT, INT, FLOAT, VARCHAR)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO gudang VALUES
+	('',$1,$2,$3,$4,$5,$6,$7);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_status_member(INT, VARCHAR)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO status_member VALUES
+	($1,$2);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_status_order(INT, VARCHAR)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO status_order VALUES
+	($1,$2);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_order_list(TEXT, INT,INT,INT,DATE,DATE,FLOAT)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO order_list VALUES
+	('',$1,$2,$3,$4,$5,$6,$7);
+    COMMIT;
+END;
+$$;
+
+
+CREATE PROCEDURE create_cart(INT,INT,INT,INT,INT,FLOAT)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO cart VALUES
+	('',$1,$2,$3,$4,$5,$6,$5*$6);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_invoice(TEXT,INT,INT,INT,DATE)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO invoice VALUES
+	('',$1,$2,$3,$4,$5);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_status_kirim(INT, VARCHAR)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO status_kirim VALUES
+	($1,$2);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_status_trans(INT, VARCHAR)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO status_trans VALUES
+	($1,$2);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_resi(INT, INT,INT,INT,FLOAT,DATE)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO resi VALUES
+	('',$1,$2,$3,$4,$5,$6);
+    COMMIT;
+END;
+$$;
+
+CREATE PROCEDURE create_histori_trans(TEXT,INT,INT,INT)
+LANGUAGE plpgsql    
+AS $$
+BEGIN
+	INSERT INTO histori_trans VALUES
+	('',$1,$2,$3,$4);
+    COMMIT;
+END;
+$$;
