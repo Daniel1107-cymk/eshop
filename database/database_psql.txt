@@ -1,55 +1,55 @@
 create table kategori(
-	id_kategori int primary key,
-    nama_kategori varchar(20)
+	id_kategori INT primary key,
+    nama_kategori VARCHAR(20)
 );
 create table tipe_item(
-	id_tipe_item int primary KEY,
-    nama_tipe_item varchar(100)
+	id_tipe_item INT primary KEY,
+    nama_tipe_item VARCHAR(100)
 );
 create table gudang(
 	id_stock SERIAl PRIMARY KEY,
-    nama_item varchar(100),
-    deskripsi text,
-    id_kategori int,
-	id_tipe_item int,
-    quantity int,
-    harga_unit float,
-	gambar varchar(255),
+    nama_item VARCHAR(100),
+    deskripsi TEXT,
+    id_kategori INT,
+	id_tipe_item INT,
+    quantity INT,
+    harga_unit FLOAT,
+	gambar VARCHAR(255),
     FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori),
     FOREIGN KEY (id_tipe_item) REFERENCES tipe_item(id_tipe_item)
 );
 create table status_member(
-	id_status_member int primary key,
-    nama_status_member varchar(50)
+	id_status_member INT primary key,
+    nama_status_member VARCHAR(50)
 );
 create table member(
 	id_member SERIAl PRIMARY KEY,
-    nama varchar(100),
-    id_status_member int,
-    alamat varchar(100),
-    email varchar(100),
+    nama VARCHAR(100),
+    id_status_member INT,
+    alamat VARCHAR(100),
+    email VARCHAR(100),
     tanggal_lahir date,
     FOREIGN key (id_status_member) REFERENCES status_member(id_status_member)
 );
 create table login(
 	login_id SERIAl primary key,
-    username varchar(100),
-	password varchar(100),
-	id_member int,
+    username VARCHAR(100),
+	password VARCHAR(100),
+	id_member INT,
 	is_admin boolean,
 	FOREIGN KEY (id_member) REFERENCES member(id_member)
 );
 
 create table status_order(
-	id_status_order int PRIMARY KEY,
-    nama_status_order varchar(50)
+	id_status_order INT PRIMARY KEY,
+    nama_status_order VARCHAR(50)
 );
 CREATE TABLE order_list(
 	id_order SERIAl PRIMARY KEY,
-    deskripsi text,
-    id_member int,
-    id_stock int,
-    id_status_order int,
+    deskripsi TEXT,
+    id_member INT,
+    id_stock INT,
+    id_status_order INT,
     tanggal_order date,
     tanggal_kirim date,
 	total FLOAT,
@@ -59,11 +59,11 @@ CREATE TABLE order_list(
 );
 create table cart(
 	id_cart SERIAl PRIMARY KEY,
-	id_order int,
-	id_member int,
-    id_stock int,
-    id_status_order int,
-	quantity int,
+	id_order INT,
+	id_member INT,
+    id_stock INT,
+    id_status_order INT,
+	quantity INT,
 	harga_unit FLOAT,
 	sub_total FLOAT,
     FOREIGN KEY (id_member) REFERENCES member(id_member),
@@ -73,29 +73,29 @@ create table cart(
 );
 create table invoice(
 	id_invoice SERIAl PRIMARY KEY,
-    kode_invoice text,
-    id_member int,
-    id_order int,
-    total_harga int,
+    kode_invoice TEXT,
+    id_member INT,
+    id_order INT,
+    total_harga INT,
     tanggal date,
     FOREIGN key (id_member) REFERENCES member(id_member),
     FOREIGN KEY (id_order) REFERENCES order_list(id_order)
 );
 create table status_kirim(
-	id_status_kirim int PRIMARY KEY,
-    nama_status_kirim varchar(50)
+	id_status_kirim INT PRIMARY KEY,
+    nama_status_kirim VARCHAR(50)
 );
 create table status_trans(
-	id_status_trans int PRIMARY KEY,
-    nama_status_trans varchar(50)
+	id_status_trans INT PRIMARY KEY,
+    nama_status_trans VARCHAR(50)
 );
 create table resi(
 	id_resi SERIAl PRIMARY KEY,
-    nomor_resi int,
-    id_member int,
-    id_status_kirim int,
-   	id_status_trans int,
-    total_harga float,
+    nomor_resi INT,
+    id_member INT,
+    id_status_kirim INT,
+   	id_status_trans INT,
+    total_harga FLOAT,
     tanggal_trans date,
     FOREIGN key (id_member) REFERENCES member(id_member),
     FOREIGN KEY (id_status_kirim) REFERENCES status_kirim(id_status_kirim),
@@ -103,10 +103,10 @@ create table resi(
 );
 create TABLE histori_trans(
 	id_histori_trans SERIAl PRIMARY KEY,
-    deskripsi text,
-    id_resi int,
-    id_stock int,
-    id_member int,
+    deskripsi TEXT,
+    id_resi INT,
+    id_stock INT,
+    id_member INT,
     FOREIGN KEY (id_member) REFERENCES member(id_member),
     FOREIGN key (id_resi) REFERENCES resi(id_resi),
     FOREIGN KEY (id_stock) REFERENCES gudang(id_stock)
