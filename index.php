@@ -1,207 +1,54 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Home Aming lim gans</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/icon.png">
-
-	<!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="style.css">
-
-	<!-- Custom css -->
-	<link rel="stylesheet" href="css/custom.css">
-
-	<!-- Modernizer js -->
-	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-</head>
-
-<body>
-	<!-- Main wrapper -->
-	<div class="wrapper" id="wrapper">
-		<!-- Header -->
-		<header id="wn__header" class="header__area header__absolute sticky__header">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 col-sm-6 col-6 col-lg-2">
-						<div class="logo">
-							<a href="index.php?page=home">
-								<img src="images/logo/logo.png" alt="logo images">
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-8 d-none d-lg-block">
-						<nav class="mainmenu__nav">
-							<ul class="meninmenu d-flex justify-content-start">
-								<li class="drop with--one--item"><a href="index.php?page=home">Home</a></li>
-								<li class="drop"><a href="#">Shop</a>
-									<div class="megamenu mega03">
-										<ul class="item item03">
-											<li class="title">Categories</li>
-											<li><a href="#">Sneakers</a></li>
-											<li><a href="#">Sandals</a></li>
-										</ul>
-										<ul class="item item03">
-											<li class="title">Male</li>
-											<li><a href="#">All Shoes</a></li>
-											<li><a href="#">Lifestyles</a></li>
-											<li><a href="#">Sports</a></li>
-										</ul>
-										<ul class="item item03">
-											<li class="title">Female</li>
-											<li><a href="#">All Shoes</a></li>
-											<li><a href="#">Lifestyles</a></li>
-											<li><a href="#">Sports</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-md-6 col-sm-6 col-6 col-lg-2">
-						<ul class="header__sidebar__right d-flex justify-content-end align-items-center">
-							<li class="wishlist"><a class="search__active" href="#"></a></li>
-							<li class="shopcart"><a href="login_page.php"></a>
-								<!-- Start Shopping Cart -->
-								<!-- End Shopping Cart -->
-							</li>
-							<li class="setting__bar__icon"><a class="setting__active" href="#"></a>
-								<div class="searchbar__content setting__block">
-									<div class="content-inner">
-										<div class="switcher-currency">
-											<strong class="label switcher-label">
-												<span>My Account</span>
-											</strong>
-											<div class="switcher-options">
-												<div class="switcher-currency-trigger">
-													<div class="setting__menu">
-														<span><a href="login_page.php">Sign In</a></span>
-														<span><a href="signup_page.php">Create An Account</a></span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- Start Mobile Menu -->
-				<div class="row d-none">
-					<div class="col-lg-12 d-none">
-						<nav class="mobilemenu__nav">
-							<ul class="meninmenu">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="#">Categories</a>
-									<ul>
-										<li><a href="#">Sneakers</a></li>
-										<li><a href="#">Sandals</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Male</a>
-									<ul>
-										<li><a href="#">All Shoes</a></li>
-										<li><a href="#">Lifestyles</a></li>
-										<li><a href="#">Sports</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Female</a>
-									<ul>
-										<li><a href="#">All Shoes</a></li>
-										<li><a href="#">Lifestyles</a></li>
-										<li><a href="#">Sports</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<!-- End Mobile Menu -->
-				<div class="mobile-menu d-block d-lg-none">
-				</div>
-				<!-- Mobile Menu -->
-			</div>
-		</header>
-		<!-- //Header -->
-		<!-- Start Search Popup -->
-		<div class="brown--color box-search-content search_active block-bg close__top">
-			<form id="search_mini_form" class="minisearch" action="#">
-				<div class="field__search">
-					<input type="text" placeholder="Search entire store here...">
-					<div class="action">
-						<a href="#"><i class="zmdi zmdi-search"></i></a>
-					</div>
-				</div>
-			</form>
-			<div class="close__wrap">
-				<span>close</span>
-			</div>
-		</div>
-		<!-- End Search Popup -->
-		<!-- Start Slider area -->
-		<div class="slider-area brown__nav slider--15 slide__activation slide__arrow01 owl-carousel owl-theme">
-			<!-- Start Single Slide -->
-			<div class="slide animation__style10 bg-image--1 fullscreen align__center--left">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="slider__content">
-								<div class="contentbox">
-									<h2>Buy <span>your </span></h2>
-									<h2>favourite <span>Shoes </span></h2>
-									<h2>from <span>Here </span></h2>
-									<a class="shopbtn" href="login_page.php">shop now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Single Slide -->
-			<!-- Start Single Slide -->
-			<div class="slide animation__style10 bg-image--7 fullscreen align__center--left">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="slider__content">
-								<div class="contentbox">
-									<h2>Buy <span>your </span></h2>
-									<h2>favourite <span>Shoes </span></h2>
-									<h2>from <span>Here </span></h2>
-									<a class="shopbtn" href="login_page.php">shop now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Single Slide -->
-		</div>
-		<!-- End Slider area -->
-		<!-- Start BEst Seller Area new product-->
+<?php
+include("lib/header.php");
+?>
+<!-- Start Slider area -->
+<div class="slider-area brown__nav slider--15 slide__activation slide__arrow01 owl-carousel owl-theme">
+        	<!-- Start Single Slide -->
+	        <div class="slide animation__style10 bg-image--1 fullscreen align__center--left">
+	            <div class="container">
+	            	<div class="row">
+	            		<div class="col-lg-12">
+	            			<div class="slider__content">
+		            			<div class="contentbox">
+		            				<h2>Buy <span>your </span></h2>
+		            				<h2>favourite <span>Shoes </span></h2>
+		            				<h2>from <span>Here </span></h2>
+				                   	<a class="shopbtn" href="#">shop now</a>
+		            			</div>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+            </div>
+            <!-- End Single Slide -->
+        	<!-- Start Single Slide -->
+	        <div class="slide animation__style10 bg-image--7 fullscreen align__center--left">
+	            <div class="container">
+	            	<div class="row">
+	            		<div class="col-lg-12">
+	            			<div class="slider__content">
+		            			<div class="contentbox">
+		            				<h2>Buy <span>your </span></h2>
+		            				<h2>favourite <span>Shoes </span></h2>
+		            				<h2>from <span>Here </span></h2>
+				                   	<a class="shopbtn" href="#">shop now</a>
+		            			</div>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+            </div>
+            <!-- End Single Slide -->
+        </div>
+        <!-- End Slider area -->
+		<!-- Start BEst Seller Area -->
 		<section class="wn__product__area brown--color pt--80  pb--30">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section__title text-center">
 							<h2 class="title__be--2">New <span class="color--theme">Products</span></h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have
-								suffered lebmid alteration in some ledmid form</p>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form</p>
 						</div>
 					</div>
 				</div>
@@ -211,10 +58,8 @@
 					<div class="product product__style--3">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="product__thumb">
-								<a class="first__img" href="single-product.html"><img src="images/books/1.jpg"
-										alt="product image"></a>
-								<a class="second__img animation1" href="single-product.html"><img
-										src="images/books/2.jpg" alt="product image"></a>
+								<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
 								<div class="hot__box">
 									<span class="hot-label">BEST SALLER</span>
 								</div>
@@ -228,13 +73,10 @@
 								<div class="action">
 									<div class="actions_inner">
 										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
-											</li>
-											<li><a class="wishlist" href="wishlist.html"><i
-														class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View"
-													class="quickview modal-view detail-link" href="#productmodal"><i
-														class="bi bi-search"></i></a></li>
+											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -255,16 +97,14 @@
 					<div class="product product__style--3">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="product__thumb">
-								<a class="first__img" href="single-product.html"><img src="images/books/1.jpg"
-										alt="product image"></a>
-								<a class="second__img animation1" href="single-product.html"><img
-										src="images/books/2.jpg" alt="product image"></a>
-								<div class="hot__box">
-									<span class="hot-label">BEST SALLER</span>
+								<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+								<div class="hot__box color--2">
+									<span class="hot-label">HOT</span>
 								</div>
 							</div>
 							<div class="product__content content--center">
-								<h4><a href="single-product.html">ciken naget</a></h4>
+								<h4><a href="single-product.html">The Remainng</a></h4>
 								<ul class="prize d-flex">
 									<li>$35.00</li>
 									<li class="old_prize">$35.00</li>
@@ -272,13 +112,10 @@
 								<div class="action">
 									<div class="actions_inner">
 										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
-											</li>
-											<li><a class="wishlist" href="wishlist.html"><i
-														class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View"
-													class="quickview modal-view detail-link" href="#productmodal"><i
-														class="bi bi-search"></i></a></li>
+											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -299,30 +136,25 @@
 					<div class="product product__style--3">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="product__thumb">
-								<a class="first__img" href="single-product.html"><img src="images/books/1.jpg"
-										alt="product image"></a>
-								<a class="second__img animation1" href="single-product.html"><img
-										src="images/books/2.jpg" alt="product image"></a>
+								<a class="first__img" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
 								<div class="hot__box">
 									<span class="hot-label">BEST SALLER</span>
 								</div>
 							</div>
 							<div class="product__content content--center">
-								<h4><a href="single-product.html">qwertyoip</a></h4>
+								<h4><a href="single-product.html">Bowen Greenwood</a></h4>
 								<ul class="prize d-flex">
-									<li>$35.00</li>
+									<li>$40.00</li>
 									<li class="old_prize">$35.00</li>
 								</ul>
 								<div class="action">
 									<div class="actions_inner">
 										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
-											</li>
-											<li><a class="wishlist" href="wishlist.html"><i
-														class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View"
-													class="quickview modal-view detail-link" href="#productmodal"><i
-														class="bi bi-search"></i></a></li>
+											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -343,30 +175,25 @@
 					<div class="product product__style--3">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="product__thumb">
-								<a class="first__img" href="single-product.html"><img src="images/books/1.jpg"
-										alt="product image"></a>
-								<a class="second__img animation1" href="single-product.html"><img
-										src="images/books/2.jpg" alt="product image"></a>
+								<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
 								<div class="hot__box">
-									<span class="hot-label">BEST SALLER</span>
+									<span class="hot-label">HOT</span>
 								</div>
 							</div>
 							<div class="product__content content--center">
-								<h4><a href="single-product.html">Bla bla bla</a></h4>
+								<h4><a href="single-product.html">Lando</a></h4>
 								<ul class="prize d-flex">
 									<li>$35.00</li>
-									<li class="old_prize">$35.00</li>
+									<li class="old_prize">$50.00</li>
 								</ul>
 								<div class="action">
 									<div class="actions_inner">
 										<ul class="add_to_links">
-											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
-											</li>
-											<li><a class="wishlist" href="wishlist.html"><i
-														class="bi bi-shopping-cart-full"></i></a></li>
-											<li><a data-toggle="modal" title="Quick View"
-													class="quickview modal-view detail-link" href="#productmodal"><i
-														class="bi bi-search"></i></a></li>
+											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -383,12 +210,89 @@
 						</div>
 					</div>
 					<!-- Start Single Product -->
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
+								<div class="hot__box">
+									<span class="hot-label">HOT</span>
+								</div>
+							</div>
+							<div class="product__content content--center">
+								<h4><a href="single-product.html">Doctor Wldo</a></h4>
+								<ul class="prize d-flex">
+									<li>$35.00</li>
+									<li class="old_prize">$35.00</li>
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Single Product -->
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+								<div class="hot__box">
+									<span class="hot-label">BEST SALER</span>
+								</div>
+							</div>
+							<div class="product__content content--center content--center">
+								<h4><a href="single-product.html">Ghost</a></h4>
+								<ul class="prize d-flex">
+									<li>$50.00</li>
+									<li class="old_prize">$35.00</li>
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+											<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+											<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Start Single Product -->
+					</div>
 				</div>
 				<!-- End Single Tab Content -->
 			</div>
 		</section>
 		<!-- Start BEst Seller Area -->
-
 		<!-- Start NEwsletter Area -->
 		<section class="wn__newsletter__area bg-image--2">
 			<div class="container">
@@ -398,8 +302,7 @@
 							<h2>Stay With Us</h2>
 						</div>
 						<div class="newsletter__block text-center">
-							<p>Subscribe to our newsletters now and stay up-to-date with new collections, the latest
-								lookbooks and exclusive offers.</p>
+							<p>Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers.</p>
 							<form action="#">
 								<div class="newsletter__box">
 									<input type="email" placeholder="Enter your e-mail">
@@ -412,30 +315,26 @@
 			</div>
 		</section>
 		<!-- End NEwsletter Area -->
-
-		<!-- Start Best Seller Area all products -->
+		<!-- Start Best Seller Area -->
 		<section class="wn__bestseller__area bg--white pt--80  pb--30">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section__title text-center">
 							<h2 class="title__be--2">All <span class="color--theme">Products</span></h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have
-								suffered lebmid alteration in some ledmid form</p>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form</p>
 						</div>
 					</div>
 				</div>
 				<div class="row mt--50">
 					<div class="col-md-12 col-lg-12 col-sm-12">
 						<div class="product__nav nav justify-content-center" role="tablist">
-							<a class="nav-item nav-link active" data-toggle="tab" href="#nav-all" role="tab">ALL</a>
-							<a class="nav-item nav-link" data-toggle="tab" href="#nav-biographic"
-								role="tab">BIOGRAPHIC</a>
-							<a class="nav-item nav-link" data-toggle="tab" href="#nav-adventure"
-								role="tab">ADVENTURE</a>
-							<a class="nav-item nav-link" data-toggle="tab" href="#nav-children" role="tab">CHILDREN</a>
-							<a class="nav-item nav-link" data-toggle="tab" href="#nav-cook" role="tab">COOK</a>
-						</div>
+                            <a class="nav-item nav-link active" data-toggle="tab" href="#nav-all" role="tab">ALL</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-biographic" role="tab">BIOGRAPHIC</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-adventure" role="tab">ADVENTURE</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-children" role="tab">CHILDREN</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-cook" role="tab">COOK</a>
+                        </div>
 					</div>
 				</div>
 				<div class="tab__container mt--60">
@@ -447,10 +346,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/1.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALER</span>
 											</div>
@@ -464,17 +361,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -495,10 +385,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALER</span>
 											</div>
@@ -512,17 +400,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -545,10 +426,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/5.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -562,17 +441,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -593,10 +465,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -610,17 +480,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -643,10 +506,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -660,17 +521,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -691,10 +545,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/11.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/5.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -708,17 +560,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -741,10 +586,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -758,17 +601,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -789,10 +625,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/12.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/12.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -806,17 +640,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -839,10 +666,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/5.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -856,17 +681,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -887,10 +705,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -904,17 +720,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -943,10 +752,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/1.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -960,17 +767,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -991,10 +791,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/10.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1008,17 +806,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1041,10 +832,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/5.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1058,17 +847,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1089,10 +871,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/1.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1106,17 +886,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1139,10 +912,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1156,17 +927,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1187,10 +951,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1204,17 +966,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1237,10 +992,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/11.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1254,17 +1007,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1285,10 +1031,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/12.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/12.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1302,17 +1046,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1335,10 +1072,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1352,17 +1087,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1383,10 +1111,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/5.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1400,17 +1126,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1439,10 +1158,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1456,17 +1173,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1487,10 +1197,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/12.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/12.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1504,17 +1212,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1537,10 +1238,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/11.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/1.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1554,17 +1253,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1585,10 +1277,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/5.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/11.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1602,17 +1292,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1635,10 +1318,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/10.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1652,17 +1333,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1683,10 +1357,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/1.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1700,17 +1372,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1733,10 +1398,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1750,17 +1413,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1781,10 +1437,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1798,17 +1452,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1831,10 +1478,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1848,17 +1493,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1879,10 +1517,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/10.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1896,17 +1532,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1935,10 +1564,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/1.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -1952,17 +1579,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1983,10 +1603,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2000,17 +1618,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2033,10 +1644,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/10.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/12.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/12.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2050,17 +1659,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2081,10 +1683,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2098,17 +1698,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2131,10 +1724,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/5.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2148,17 +1739,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2179,10 +1763,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2196,17 +1778,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2229,10 +1804,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/12.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/12.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2246,17 +1819,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2277,10 +1843,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2294,17 +1858,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2327,10 +1884,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2344,17 +1899,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2375,10 +1923,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/1.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2392,17 +1938,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2431,10 +1970,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2448,17 +1985,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2479,10 +2009,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/10.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2496,17 +2024,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2529,10 +2050,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2546,17 +2065,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2577,10 +2089,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2594,17 +2104,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2627,10 +2130,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2644,17 +2145,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2675,10 +2169,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2692,17 +2184,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2725,10 +2210,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/7.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2742,17 +2225,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2773,10 +2249,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2790,17 +2264,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2823,10 +2290,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/8.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/3.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2840,17 +2305,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2871,10 +2329,8 @@
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img
-													src="images/books/2.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img
-													src="images/books/6.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALLER</span>
 											</div>
@@ -2888,17 +2344,10 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-														<li><a class="cart" href="cart.html"><i
-																	class="bi bi-shopping-bag4"></i></a></li>
-														<li><a class="wishlist" href="wishlist.html"><i
-																	class="bi bi-shopping-cart-full"></i></a></li>
-														<li><a class="compare" href="#"><i
-																	class="bi bi-heart-beat"></i></a>
-														</li>
-														<li><a data-toggle="modal" title="Quick View"
-																class="quickview modal-view detail-link"
-																href="#productmodal"><i class="bi bi-search"></i></a>
-														</li>
+														<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+														<li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+														<li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+														<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -2923,162 +2372,7 @@
 			</div>
 		</section>
 		<!-- Start BEst Seller Area -->
-		<!-- Footer Area -->
-		<footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
-			<div class="footer-static-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="footer__widget footer__menu">
-								<div class="ft__logo">
-									<a href="index.html">
-										<img src="images/logo/3.png" alt="logo">
-									</a>
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority
-										have suffered duskam alteration variations of passages</p>
-								</div>
-								<div class="footer__content">
-									<ul class="social__net social__net--2 d-flex justify-content-center">
-										<li><a href="#"><i class="bi bi-facebook"></i></a></li>
-										<li><a href="#"><i class="bi bi-google"></i></a></li>
-										<li><a href="#"><i class="bi bi-twitter"></i></a></li>
-										<li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-										<li><a href="#"><i class="bi bi-youtube"></i></a></li>
-									</ul>
-									<ul class="mainmenu d-flex justify-content-center">
-										<li><a href="index.html">Trending</a></li>
-										<li><a href="index.html">Best Seller</a></li>
-										<li><a href="index.html">All Product</a></li>
-										<li><a href="index.html">Wishlist</a></li>
-										<li><a href="index.html">Blog</a></li>
-										<li><a href="index.html">Contact</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="copyright__wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="copyright">
-								<div class="copy__right__inner text-left">
-									<p>Copyright <i class="fa fa-copyright"></i> <a
-											href="https://freethemescloud.com/">Free themes Cloud.</a> All Rights
-										Reserved</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="payment text-right">
-								<img src="images/icons/payment.png" alt="" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- //Footer Area -->
-		<!-- QUICKVIEW PRODUCT -->
-		<div id="quickview-wrapper">
-			<!-- Modal -->
-			<div class="modal fade" id="productmodal" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal__container" role="document">
-					<div class="modal-content">
-						<div class="modal-header modal__header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-									aria-hidden="true">&times;</span></button>
-						</div>
-						<div class="modal-body">
-							<div class="modal-product">
-								<!-- Start product images -->
-								<div class="product-images">
-									<div class="main-image images">
-										<img alt="big images" src="images/product/big-img/1.jpg">
-									</div>
-								</div>
-								<!-- end product images -->
-								<div class="product-info">
-									<h1>Simple Fabric Bags</h1>
-									<div class="rating__and__review">
-										<ul class="rating">
-											<li><span class="ti-star"></span></li>
-											<li><span class="ti-star"></span></li>
-											<li><span class="ti-star"></span></li>
-											<li><span class="ti-star"></span></li>
-											<li><span class="ti-star"></span></li>
-										</ul>
-										<div class="review">
-											<a href="#">4 customer reviews</a>
-										</div>
-									</div>
-									<div class="price-box-3">
-										<div class="s-price-box">
-											<span class="new-price">$17.20</span>
-											<span class="old-price">$45.00</span>
-										</div>
-									</div>
-									<div class="quick-desc">
-										Designed for simplicity and made from high quality materials. Its sleek geometry
-										and material combinations creates a modern look.
-									</div>
-									<div class="select__color">
-										<h2>Select color</h2>
-										<ul class="color__list">
-											<li class="red"><a title="Red" href="#">Red</a></li>
-											<li class="gold"><a title="Gold" href="#">Gold</a></li>
-											<li class="orange"><a title="Orange" href="#">Orange</a></li>
-											<li class="orange"><a title="Orange" href="#">Orange</a></li>
-										</ul>
-									</div>
-									<div class="select__size">
-										<h2>Select size</h2>
-										<ul class="color__list">
-											<li class="l__size"><a title="L" href="#">L</a></li>
-											<li class="m__size"><a title="M" href="#">M</a></li>
-											<li class="s__size"><a title="S" href="#">S</a></li>
-											<li class="xl__size"><a title="XL" href="#">XL</a></li>
-											<li class="xxl__size"><a title="XXL" href="#">XXL</a></li>
-										</ul>
-									</div>
-									<div class="social-sharing">
-										<div class="widget widget_socialsharing_widget">
-											<h3 class="widget-title-modal">Share this product</h3>
-											<ul class="social__net social__net--2 d-flex justify-content-start">
-												<li class="facebook"><a href="#" class="rss social-icon"><i
-															class="zmdi zmdi-rss"></i></a></li>
-												<li class="linkedin"><a href="#" class="linkedin social-icon"><i
-															class="zmdi zmdi-linkedin"></i></a></li>
-												<li class="pinterest"><a href="#" class="pinterest social-icon"><i
-															class="zmdi zmdi-pinterest"></i></a></li>
-												<li class="tumblr"><a href="#" class="tumblr social-icon"><i
-															class="zmdi zmdi-tumblr"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="addtocart-btn">
-										<a href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END QUICKVIEW PRODUCT -->
-	</div>
-	<!-- //Main wrapper -->
-
-	<!-- JS Files -->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/active.js"></script>
-
-</body>
-
-</html>
+		
+<?php
+include("lib/footer.php");
+?>
