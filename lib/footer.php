@@ -7,7 +7,7 @@
 							<div class="footer__widget footer__menu">
 								<div class="ft__logo">
 									<a href="index.html">
-										<img src="http://localhost/ardy/images/logo/3.png" alt="logo">
+										<img src="http://localhost/eshop/images/logo/3.png" alt="logo">
 									</a>
 									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered duskam alteration variations of passages</p>
 								</div>
@@ -57,11 +57,11 @@
 	<!-- //Main wrapper -->
 
 	<!-- JS Files -->
-	<script src="http://localhost/ardy/js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="http://localhost/ardy/js/popper.min.js"></script>
-	<script src="http://localhost/ardy/js/bootstrap.min.js"></script>
-	<script src="http://localhost/ardy/js/plugins.js"></script>
-	<script src="http://localhost/ardy/js/active.js"></script>
+	<script src="http://localhost/eshop/js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="http://localhost/eshop/js/popper.min.js"></script>
+	<script src="http://localhost/eshop/js/bootstrap.min.js"></script>
+	<script src="http://localhost/eshop/js/plugins.js"></script>
+	<script src="http://localhost/eshop/js/active.js"></script>
 	
 </body>
 </html>

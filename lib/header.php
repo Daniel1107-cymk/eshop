@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="http://localhost/ardy/images/favicon.ico">
-	<link rel="apple-touch-icon" href="http://localhost/ardy/images/icon.png">
+	<link rel="shortcut icon" href="http://localhost/eshop/images/favicon.ico">
+	<link rel="apple-touch-icon" href="http://localhost/eshop/images/icon.png">
 
 	<!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
@@ -17,15 +17,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="http://localhost/ardy/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/ardy/css/plugins.css">
-	<link rel="stylesheet" href="http://localhost/ardy/style.css">
+	<link rel="stylesheet" href="http://localhost/eshop/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://localhost/eshop/css/plugins.css">
+	<link rel="stylesheet" href="http://localhost/eshop/style.css">
 
 	<!-- Cusom css -->
-   <link rel="stylesheet" href="http://localhost/ardy/css/custom.css">
+   <link rel="stylesheet" href="http://localhost/eshop/css/custom.css">
 
 	<!-- Modernizer js -->
-	<script src="http://localhost/ardy/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="http://localhost/eshop/js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
 <body>
 	<!--[if lte IE 9]>
@@ -40,33 +40,33 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-6 col-lg-2">
 						<div class="logo">
-							<a href="http://localhost/ardy/index.php">
-								<img src="http://localhost/ardy/images/logo/logo.png" alt="logo images">
+							<a href="http://localhost/eshop/index.php">
+								<img src="http://localhost/eshop/images/logo/logo.png" alt="logo images">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-8 d-none d-lg-block">
 						<nav class="mainmenu__nav">
 							<ul class="meninmenu d-flex justify-content-start">
-								<li class="drop with--one--item"><a href="http://localhost/ardy/index.php">Home</a></li>
+								<li class="drop with--one--item"><a href="http://localhost/eshop/index.php">Home</a></li>
 								<li class="drop"><a href="#">Shop</a>
 									<div class="megamenu mega03">
 										<ul class="item item03">
 											<li class="title">Shop Layout</li>
-											<li><a href="http://localhost/ardy/shop/sneakers.php">Sneakers</a></li>
-											<li><a href="http://localhost/ardy/shop/sandals.php">Sandals</a></li>
+											<li><a href="http://localhost/eshop/shop/sneakers.php">Sneakers</a></li>
+											<li><a href="http://localhost/eshop/shop/sandals.php">Sandals</a></li>
 										</ul>
 										<ul class="item item03">
 											<li class="title">Male</li>
-											<li><a href="http://localhost/ardy/shop/male.php">All Shoes</a></li>
-											<li><a href="http://localhost/ardy/shop/male_lifestyles.php">Lifestyles</a></li>
-											<li><a href="http://localhost/ardy/shop/male_sports.php">Sports</a></li>
+											<li><a href="http://localhost/eshop/shop/male.php">All Shoes</a></li>
+											<li><a href="http://localhost/eshop/shop/male_lifestyles.php">Lifestyles</a></li>
+											<li><a href="http://localhost/eshop/shop/male_sports.php">Sports</a></li>
 										</ul>
 										<ul class="item item03">
 											<li class="title">Female</li>
-											<li><a href="http://localhost/ardy/shop/female.php">All Shoes</a></li>
-											<li><a href="http://localhost/ardy/shop/female_lifestyles.php">Lifestyles</a></li>
-											<li><a href="http://localhost/ardy/shop/female_sports.php">Sports</a></li>
+											<li><a href="http://localhost/eshop/shop/female.php">All Shoes</a></li>
+											<li><a href="http://localhost/eshop/shop/female_lifestyles.php">Lifestyles</a></li>
+											<li><a href="http://localhost/eshop/shop/female_sports.php">Sports</a></li>
 										</ul>
 									</div>
 								</li>
@@ -76,7 +76,7 @@
 					<div class="col-md-6 col-sm-6 col-6 col-lg-2">
 						<ul class="header__sidebar__right d-flex justify-content-end align-items-center">
 							<li class="wishlist"><a class="search__active" href="#"></a></li>
-							<li class="shopcart"><a href="http://localhost/ardy/login_page.php"></a>
+							<li class="shopcart"><a href="http://localhost/eshop/login_page.php"></a>
 								<!-- Start Shopping Cart -->
 								<!-- End Shopping Cart -->
 							</li>
@@ -90,8 +90,8 @@
 											<div class="switcher-options">
 												<div class="switcher-currency-trigger">
 													<div class="setting__menu">
-														<span><a href="http://localhost/ardy/login_page.php">Sign In</a></span>
-														<span><a href="http://localhost/ardy/signup_page.php">Create An Account</a></span>
+														<span><a href="http://localhost/eshop/login_page.php">Sign In</a></span>
+														<span><a href="http://localhost/eshop/signup_page.php">Create An Account</a></span>
 													</div>
 												</div>
 											</div>

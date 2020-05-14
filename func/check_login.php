@@ -10,9 +10,9 @@
 		$_SESSION['login_type'] = 'user';
 		$_SESSION['status'] = 'login';
         if($username == 'admin'){
-            header('location:../users/admin_page.php');
+            header('location:../admin/admin_page.php');
         }else{
-            header('location:../users/index.php');
+            header('location:../admin/index.php');
         }
     }else{
         echo "<script type='text/javascript'> 
