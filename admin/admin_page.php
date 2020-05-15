@@ -137,6 +137,12 @@
 					case 'edit_item':
 						include 'edit_item.php';
 					break;
+					case 'order_list':
+						include 'order_list.php';
+					break;
+					case 'cart_list':
+						include 'cart_list.php';
+					break;
 				}
 			}
 			else{
