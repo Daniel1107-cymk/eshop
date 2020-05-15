@@ -4,11 +4,12 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
-    <!-- Favicons -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Page</title>
+	<!-- Favicons -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="images/icon.png">
 
@@ -29,6 +30,7 @@
 	<!-- Modernizer js -->
 	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
+
 <body>
 	<div class="wrapper" id="wrapper">
 		<!-- Header -->
@@ -47,18 +49,34 @@
 							<ul class="meninmenu d-flex justify-content-start">
 								<li class="drop with--one--item"><a href="admin_page.php?page=admin_home">Home</a></li>
 								<li class="drop with--one--item"><a href="admin_page.php?page=admin_gudang">Stock</a>
+									<div class="megamenu mega03">
+										<ul class="item item03">
+											<li><a href="admin_page.php?page=tambah_item">New Item</a></li>
+										</ul>
+										<ul class="item item03">
+											<li><a href="admin_page.php?page=tambah_stock">Tambah Stock</a></li>
+										</ul>
+										<ul class="item item03">
+											<li><a href="admin_page.php?page=edit_item">Edit Item</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop with--one--item"><a href="admin_page.php?page=order_list">Order</a>
 								<div class="megamenu mega03">
 									<ul class="item item03">
-										<li><a href="admin_page.php?page=tambah_item">New Item</a></li>
+										<li><a href="admin_page.php?page=order_list">Order List</a></li>
 									</ul>
 									<ul class="item item03">
-										<li><a href="admin_page.php?page=tambah_stock">Tambah Stock</a></li>
+										<li><a href="admin_page.php?page=cart_list">Cart List</a></li>
 									</ul>
 									<ul class="item item03">
-										<li><a href="admin_page.php?page=edit_item">Edit Item</a></li>
+										<li><a href="admin_page.php?page=add_cart">Add Cart List</a></li>
+									</ul>
+									<ul class="item item03">
+										<li><a href="admin_page.php?page=edit_cart">Edit Cart List</a></li>
 									</ul>
 								</div>
-							</li>
+								</li>
 							</ul>
 						</nav>
 					</div>
@@ -90,10 +108,10 @@
 					</div>
 				</div>
 				<!-- End Mobile Menu -->
-	            <div class="mobile-menu d-block d-lg-none">
-	            </div>
-	            <!-- Mobile Menu -->	
-			</div>		
+				<div class="mobile-menu d-block d-lg-none">
+				</div>
+				<!-- Mobile Menu -->
+			</div>
 		</header>
 		<!-- //Header -->
 		<?php 
@@ -109,6 +127,9 @@
 					case 'tambah_item':
 						include 'tambah_item.php';
 					break;
+					case 'editgudang':
+						include 'editgudang.php';
+					break;
 					case 'tambah_stock':
 						include 'tambah_stock.php';
 					break;
@@ -123,11 +144,12 @@
 		?>
 	</div>
 
-    <!-- JS Files -->
+	<!-- JS Files -->
 	<script src="../js/vendor/jquery-3.2.1.min.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/plugins.js"></script>
 	<script src="../js/active.js"></script>
 </body>
+
 </html>

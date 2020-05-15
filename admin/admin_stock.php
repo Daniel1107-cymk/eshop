@@ -38,8 +38,13 @@
                         <td><?php echo $d['nama_kategori'] ?></td>
                         <td><?php echo $d['nama_tipe_item'] ?></td>
                         <td><?php echo $d['quantity'] ?></td>
-                        <td><?php echo $d['harga'] ?></td>
-                        <td><?php echo $d['gambar'] ?></td>
+                        <td><?php echo $d['harga_unit'] ?></td>
+                        <td><?php
+						if ($d['gambar']){
+                        $img =$d['gambar'];
+						echo '<img src="$img" height="200" width="200" class="img-thumnail" />';
+						}
+						?></td>
                     </tr>
                 </tbody>
                 <?php 
