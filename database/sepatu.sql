@@ -52,7 +52,7 @@ CREATE TABLE `gudang` (
   `id_tipe_item` int(11) DEFAULT NULL,
   `quantity` int(11) DEFAULT NULL,
   `harga_unit` float DEFAULT NULL,
-  `gambar` longblob DEFAULT NULL
+  `gambar` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

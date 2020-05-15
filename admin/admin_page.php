@@ -93,6 +93,7 @@
 									</div>
 								</div>
 							</li>
+							<li><a href="../func/logout.php">Logout</a></li>
 						</ul>
 					</div>
 				</div>

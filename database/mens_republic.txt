@@ -149,7 +149,7 @@ create table gudang(
 	id_tipe_item int,
     quantity int,
     harga_unit float,
-	gambar longblob,
+	gambar varchar(255),
     FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori),
     FOREIGN KEY (id_tipe_item) REFERENCES tipe_item(id_tipe_item)
 );

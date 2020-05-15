@@ -7,12 +7,13 @@
     $alamat = $_POST['alamat'];
     $email = $_POST['email'];
 
-    $select_login_username = mysqli_query($koneksi, "SELECT * FROM login WHERE username='$username'");
-    if($d=mysqli_fetch_assoc($select_login_username)){
-        // buat message ngak boleh pakek username yang udah ada
-        header('location:../signup_page.php');
-    }
-    else{
+    $result = mysqli_query($koneksi, "select * from login where username='$username'");
+    if (mysqli_num_rows($result) > 0 | $username == 'admin'){
+        echo "<script type='text/javascript'> 
+        alert('Maaf Username Telah Digunakan'); 
+        window.history.back();
+        </script>";
+    }else{
         $insert = mysqli_query($koneksi, "INSERT INTO member VALUES('','$nama_lengkap',1,'$alamat','$email','$tanggal_lahir');");
         $select_member = mysqli_query($koneksi, "SELECT * FROM member WHERE nama='$nama_lengkap' AND alamat='$alamat' AND email='$email'");
         $member = mysqli_fetch_array($select_member);
@@ -23,6 +24,5 @@
         
         header('location:../login_page.php');
     }
-
     
 ?>
