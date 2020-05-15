@@ -43,7 +43,7 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-6 col-lg-2">
 						<div class="logo">
-							<a href="index.html">
+							<a href="index.php">
 								<img src="images/logo/logo.png" alt="logo images">
 							</a>
 						</div>
@@ -190,7 +190,7 @@
 						<div class="col-lg-12">
 							<div class="footer__widget footer__menu">
 								<div class="ft__logo">
-									<a href="index.html">
+									<a href="index.php">
 										<img src="images/logo/3.png" alt="logo">
 									</a>
 									<p>There are many variations of passages of Lorem Ipsum available, but the majority
@@ -205,12 +205,12 @@
 										<li><a href="#"><i class="bi bi-youtube"></i></a></li>
 									</ul>
 									<ul class="mainmenu d-flex justify-content-center">
-										<li><a href="index.html">Trending</a></li>
-										<li><a href="index.html">Best Seller</a></li>
-										<li><a href="index.html">All Product</a></li>
-										<li><a href="index.html">Wishlist</a></li>
-										<li><a href="index.html">Blog</a></li>
-										<li><a href="index.html">Contact</a></li>
+										<li><a href="index.php">Trending</a></li>
+										<li><a href="index.php">Best Seller</a></li>
+										<li><a href="index.php">All Product</a></li>
+										<li><a href="index.php">Wishlist</a></li>
+										<li><a href="index.php">Blog</a></li>
+										<li><a href="index.php">Contact</a></li>
 									</ul>
 								</div>
 							</div>

@@ -10,7 +10,7 @@ include("lib/header.php")
 						<div class="bradcaump__inner text-center">
 							<h2 class="bradcaump-title">My Account</h2>
 							<nav class="bradcaump-content">
-								<a class="breadcrumb_item" href="index.html">Home</a>
+								<a class="breadcrumb_item" href="index.php">Home</a>
 								<span class="brd-separetor">/</span>
 								<span class="breadcrumb_item active">My Account</span>
 							</nav>

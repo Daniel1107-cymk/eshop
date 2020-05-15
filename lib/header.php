@@ -107,7 +107,7 @@
 					<div class="col-lg-12 d-none">
 						<nav class="mobilemenu__nav">
 							<ul class="meninmenu">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li><a href="#">Pages</a>
 									<ul>
 										<li><a href="about.html">About Page</a></li>

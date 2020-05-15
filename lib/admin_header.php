@@ -40,7 +40,7 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-6 col-lg-2">
 						<div class="logo">
-							<a href="index.html">
+							<a href="index.php">
 								<img src="images/logo/logo.png" alt="logo images">
 							</a>
 						</div>
@@ -107,7 +107,7 @@
 					<div class="col-lg-12 d-none">
 						<nav class="mobilemenu__nav">
 							<ul class="meninmenu">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li><a href="#">Pages</a>
 									<ul>
 										<li><a href="about.html">About Page</a></li>
