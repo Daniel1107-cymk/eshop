@@ -178,25 +178,26 @@ create table status_order(
 );
 CREATE TABLE order_list(
 	id_order int primary key AUTO_INCREMENT,
+    order_num varchar(25),
     deskripsi text,
     id_member int,
-    id_stock int,
     id_status_order int,
     tanggal_order date,
     tanggal_kirim date,
     total_harga float,
     FOREIGN KEY (id_member) REFERENCES member(id_member),
-    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
     FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
 );
 create table cart(
 	id_cart int primary KEY AUTO_INCREMENT,
+    id_order int,
 	id_member int,
     id_stock int,
     id_status_order int,
     quantity int,
     harga_unit float,
     sub_total float,
+    FOREIGN KEY (id_order) REFERENCES order_list(id_order),
     FOREIGN KEY (id_member) REFERENCES member(id_member),
     FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
     FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
@@ -263,3 +264,21 @@ VALUES ('', 'Kirim'),
 insert into status_trans
 VALUES ('', 'Proses'),
 		('', 'Selesai');
+
+INSERT INTO `gudang` (`id_stock`, `nama_item`, `deskripsi`, `id_kategori`, `id_tipe_item`, `quantity`, `harga_unit`, `gambar`) VALUES
+(1, 'Puma Sport Heroes', 'Limited Summer Edition 2019', 1, 1, 1, 340000, '111-sepatu 2.png'),
+(2, 'Adidas Go Run', 'For Jogging In the Shiny Day', 2, 1, 5, 275000, '972-Sepatu 3.png'),
+(3, 'Fila Monster 2.0', 'New Stock ', 1, 1, 3, 380000, '628-Sepatu 4.png'),
+(4, 'FIla Snow White Edition', 'New Stock', 1, 1, 8, 425000, '375-sepatu 5.png'),
+(5, 'Cepyhrus 2.1', 'Winter Edition 2019', 1, 1, 4, 280000, '429-Untitled-2.png'),
+(6, 'Go Run', 'New Male Running Shoes', 1, 1, 5, 320000, '482-Untitled-3.png'),
+(7, 'Fila Shiny Light Winter Edition', 'Old Stock', 1, 1, 4, 310000, '464-Untitled-4.png'),
+(8, 'Red Fire A.20', 'New Incoming', 1, 1, 3, 340000, '869-Untitled-5.png'),
+(9, 'Nike - GORevo 2.0', 'Limited Edition', 1, 1, 3, 450000, '121-Untitled-6.png'),
+(10, 'Nike Runvolutioner 4.0', 'New Running Shoes', 1, 1, 4, 390000, '490-Untitled-7.png'),
+(11, 'Patron Running Shoes ', 'New Stock', 1, 1, 4, 420000, '361-Untitled-8.png'),
+(12, 'Nike GoLight 1.0', 'Women Day 2020 Edition ', 2, 1, 3, 380000, '972-Untitled-9.png'),
+(13, 'Go Matic', 'New Stock ', 1, 1, 4, 320000, '848-Untitled-10.png'),
+(14, 'Mens Power Classical', 'New Stock ', 1, 1, 4, 390000, '348-Untitled-12png.png'),
+(15, 'The Executive Classical Shoes ', 'New Stock ', 1, 1, 4, 420000, '38-Untitled-13psd.png'),
+(16, 'NIke GoForLight Summer 2019', 'Old Stock', 1, 1, 2, 340000, '451-Untitled-14.png');
