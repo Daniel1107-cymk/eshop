@@ -124,3 +124,142 @@ VALUES (101, 'Kirim'),
 insert into status_trans
 VALUES (101, 'Proses'),
 		(102, 'Selesai');
+
+
+
+// new database //
+
+
+
+
+-- create table --
+create table kategori(
+	id_kategori int primary key AUTO_INCREMENT,
+    nama_kategori varchar(20)
+);
+create table tipe_item(
+	id_tipe_item int primary KEY AUTO_INCREMENT,
+    nama_tipe_item varchar(100)
+);
+create table gudang(
+	id_stock int primary key AUTO_INCREMENT,
+    nama_item varchar(100),
+    deskripsi text,
+    id_kategori int,
+	id_tipe_item int,
+    quantity int,
+    harga_unit float,
+	gambar varchar(255),
+    FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori),
+    FOREIGN KEY (id_tipe_item) REFERENCES tipe_item(id_tipe_item)
+);
+
+create table member(
+	id_member int primary KEY AUTO_INCREMENT,
+    nama varchar(100),
+    member_active boolean,
+    alamat varchar(100),
+    email varchar(100),
+    tanggal_lahir date
+);
+
+create table login(
+    id_login int primary KEY AUTO_INCREMENT,
+    username varchar(100),
+    password varchar(100),
+    id_member int,
+    is_admin boolean,
+    FOREIGN key (id_member) REFERENCES member(id_member)
+);
+
+create table status_order(
+	id_status_order int PRIMARY KEY AUTO_INCREMENT,
+    nama_status_order varchar(50)
+);
+CREATE TABLE order_list(
+	id_order int primary key AUTO_INCREMENT,
+    deskripsi text,
+    id_member int,
+    id_stock int,
+    id_status_order int,
+    tanggal_order date,
+    tanggal_kirim date,
+    total_harga float,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
+    FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
+);
+create table cart(
+	id_cart int primary KEY AUTO_INCREMENT,
+	id_member int,
+    id_stock int,
+    id_status_order int,
+    quantity int,
+    harga_unit float,
+    sub_total float,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock),
+    FOREIGN key (id_status_order) REFERENCES status_order(id_status_order)
+);
+create table invoice(
+	id_invoice int primary key AUTO_INCREMENT,
+    kode_invoice text,
+    id_member int,
+    id_order int,
+    id_stock int,
+    qty int,
+    total_harga float,
+    tanggal date,
+    FOREIGN key (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_order) REFERENCES order_list(id_order),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock)
+);
+create table status_kirim(
+	id_status_kirim int PRIMARY KEY AUTO_INCREMENT,
+    nama_status_kirim varchar(50)
+);
+create table status_trans(
+	id_status_trans int PRIMARY KEY AUTO_INCREMENT,
+    nama_status_trans varchar(50)
+);
+create table resi(
+	id_resi int PRIMARY key AUTO_INCREMENT,
+    nomor_resi int,
+    id_member int,
+    id_status_kirim int,
+   	id_status_trans int,
+    total_harga float,
+    tanggal_trans date,
+    FOREIGN key (id_member) REFERENCES member(id_member),
+    FOREIGN KEY (id_status_kirim) REFERENCES status_kirim(id_status_kirim),
+    FOREIGN KEY (id_status_trans) REFERENCES status_trans(id_status_trans)
+);
+create TABLE histori_trans(
+	id_histori_trans int PRIMARY KEY AUTO_INCREMENT,
+    deskripsi text,
+    id_resi int,
+    id_stock int,
+    id_member int,
+    FOREIGN KEY (id_member) REFERENCES member(id_member),
+    FOREIGN key (id_resi) REFERENCES resi(id_resi),
+    FOREIGN KEY (id_stock) REFERENCES gudang(id_stock)
+);
+
+-- insert data --
+insert into kategori
+VALUES ('', 'Male'),
+		('', 'Female');
+INSERT INTO tipe_item
+VALUES ('', 'Sneakers'),
+		('', 'Sandals');
+        
+insert into status_order
+VALUES ('', 'Belum Bayar'),
+		('', 'Kirim'),
+        ('', 'selesai');
+insert into status_kirim
+VALUES ('', 'Kirim'),
+		('', 'Terkirim');
+insert into status_trans
+VALUES ('', 'Proses'),
+		('', 'Selesai');

@@ -7,20 +7,22 @@
     $alamat = $_POST['alamat'];
     $email = $_POST['email'];
 
-    $user_status=101;
-    // $insert = pg_query($koneksi, "INSERT INTO member VALUES('','$nama_lengkap',$user_status::INT,'$alamat','$email','$tanggal_lahir');");
-    $insert = mysqli_query($koneksi, "CALL create_member('$nama_lengkap','$user_status','$alamat','$email','$tanggal_lahir');");
-    $select_member = mysqli_query($koneksi, "SELECT * FROM member WHERE nama='$nama_lengkap' AND alamat='$alamat' AND email='$email'");
-    $member = mysqli_fetch_array($select_member);
-    $member_id = $member[0];
-    echo $member_id;
-    $insert_login = mysqli_query($koneksi, "CALL create_login('$username','$password','$member_id','FALSE')");
-    echo $insert_login;
+    $select_login_username = mysqli_query($koneksi, "SELECT * FROM login WHERE username='$username'");
+    if($d=mysqli_fetch_assoc($select_login_username)){
+        // buat message ngak boleh pakek username yang udah ada
+        header('location:../signup_page.php');
+    }
+    else{
+        $insert = mysqli_query($koneksi, "INSERT INTO member VALUES('','$nama_lengkap',1,'$alamat','$email','$tanggal_lahir');");
+        $select_member = mysqli_query($koneksi, "SELECT * FROM member WHERE nama='$nama_lengkap' AND alamat='$alamat' AND email='$email'");
+        $member = mysqli_fetch_array($select_member);
+        $member_id = $member[0];
+        $insert_login = mysqli_query($koneksi, "INSERT INTO login VALUES('','$username','$password','$member_id',0)");
+        echo $insert_login;
 
-    // note
-    // udah pernah juga coba 
-    // CALL create_member('$nama_lengkap',101,'$alamat','$email','$tanggal_lahir')
-    // database nya bisa di ambil dari database_psql
+        
+        header('location:../login_page.php');
+    }
+
     
-    // header('location:../login_page.php');
 ?>
