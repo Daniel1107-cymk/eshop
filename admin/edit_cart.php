@@ -1,3 +1,10 @@
+<?php
+// include '../func/koneksi.php';
+// $page = $_GET['page'];
+// $id= $_GET['id'];
+// $data = mysqli_query($koneksi,"select * from cart where id_stock='$id'");
+// $d = mysqli_fetch_array($data)
+    ?>
 <!-- Start Bradcaump area -->
 <div class="ht__bradcaump__area bg-image--6">
     <div class="container">
@@ -23,6 +30,8 @@
                         <th>Qty</th>
                         <th>Harga</th>
                         <th>Sub Total</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <?php
@@ -44,6 +53,9 @@
                         <td><?php echo $d['quantity'] ?></td>
                         <td><?php echo $d['harga_unit'] ?></td>
                         <td><?php echo $d['sub_total'] ?></td>
+                        <td><a class="btn btn-info" href="admin_page.php?page=editcart&id=<?php echo $d['id_cart'];?>?">EDIT</a></td>
+                        <td><a class="btn btn-danger" href="../func/deletecart.php?id=<?php echo $d['id_cart'];?>">DELETE</a></td>
+                    </tr>
                     </tr>
                 </tbody>
                 <?php 

@@ -14,36 +14,33 @@
 <section class="my_account_area pt--80 pb--55 bg--white">
     <div class="container">
         <div class="card-body table-responsive p-0">
+            
             <table class="table table-hover table-striped table-valign-middle">
                 <thead>
                     <tr>
                         <th>Order Number</th>
                         <th>Member</th>
-                        <th>Item</th>
-                        <th>Qty</th>
-                        <th>Harga</th>
-                        <th>Sub Total</th>
+                        <th>Deskripsi</th>
+                        <th>Tanggal Order</th>
+                        <th>Tanggal kirim</th>
+                        <th>Total</th>
+                        <th>Status order</th>
                     </tr>
                 </thead>
                 <?php
                 include '../func/koneksi.php';
-                $d1 = FALSE;
-                $data = mysqli_query($koneksi, "select * from cart INNER JOIN member ON cart.id_member=member.id_member INNER JOIN status_trans ON cart.id_status_order=status_trans.id_status_trans INNER JOIN gudang ON cart.id_stock=gudang.id_stock");
+                $data = mysqli_query($koneksi, "select * from order_list INNER JOIN member ON order_list.id_member=member.id_member INNER JOIN status_order ON order_list.id_status_order=status_order.id_status_order");
                 while($d = mysqli_fetch_array($data)){
-                if ($d['id_order']){
-                    $order_id =$d['id_order'];
-                    $data1 = mysqli_query($koneksi, "select * from order_list where id_order='$order_id'");
-                    $d1 = mysqli_fetch_array($data1);
-                }
             ?>
                 <tbody>
                     <tr>
-                        <td><?php if ($d1){ echo $d1['order_num'];} ?></td>
-                        <td><?php echo $d['nama'] ?></td>
-                        <td><?php echo $d['nama_item'] ?></td>
-                        <td><?php echo $d['quantity'] ?></td>
-                        <td><?php echo $d['harga_unit'] ?></td>
-                        <td><?php echo $d['sub_total'] ?></td>
+                        <td><?php echo $d['order_num'] ?></td>
+                        <td><?php echo $d['name'] ?></td>
+                        <td><?php echo $d['deskripsi'] ?></td>
+                        <td><?php echo $d['tanggal_order'] ?></td>
+                        <td><?php echo $d['tanggal_kirim'] ?></td>
+                        <td><?php echo $d['total_harga'] ?></td>
+                        <td><?php echo $d['nama_status_order'] ?></td>
                     </tr>
                 </tbody>
                 <?php 

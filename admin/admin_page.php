@@ -143,6 +143,15 @@
 					case 'cart_list':
 						include 'cart_list.php';
 					break;
+					case 'add_cart':
+						include 'add_cart.php';
+					break;
+					case 'edit_cart':
+						include 'edit_cart.php';
+					break;
+					case 'editcart':
+						include 'editcart.php';
+					break;
 				}
 			}
 			else{
