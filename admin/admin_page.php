@@ -89,6 +89,20 @@
 
 									</div>
 								</li>
+								<li class="drop with--one--item"><a href="admin_page.php?page=admin_gudang">Invoice</a>
+									<div class="megamenu mega03">
+										<ul class="item item03">
+											<li><a href="admin_page.php?page=invoice_list">Invoice list</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop with--one--item"><a href="admin_page.php?page=admin_gudang">Pengiriman</a>
+									<div class="megamenu mega03">
+										<ul class="item item03">
+											<li><a href="admin_page.php?page=list_pengiriman">List Pengiriman</a></li>
+										</ul>
+									</div>
+								</li>
 							</ul>
 						</nav>
 					</div>
