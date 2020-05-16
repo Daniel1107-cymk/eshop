@@ -35,7 +35,7 @@
                 <tbody>
                     <tr>
                         <td><?php echo $d['order_num'] ?></td>
-                        <td><?php echo $d['name'] ?></td>
+                        <td><?php echo $d['nama'] ?></td>
                         <td><?php echo $d['deskripsi'] ?></td>
                         <td><?php echo $d['tanggal_order'] ?></td>
                         <td><?php echo $d['tanggal_kirim'] ?></td>

@@ -62,20 +62,32 @@
 									</div>
 								</li>
 								<li class="drop with--one--item"><a href="admin_page.php?page=order_list">Order</a>
-								<div class="megamenu mega03">
-									<ul class="item item03">
-										<li><a href="admin_page.php?page=order_list">Order List</a></li>
-									</ul>
-									<ul class="item item03">
-										<li><a href="admin_page.php?page=cart_list">Cart List</a></li>
-									</ul>
-									<ul class="item item03">
-										<li><a href="admin_page.php?page=add_cart">Add Cart List</a></li>
-									</ul>
-									<ul class="item item03">
-										<li><a href="admin_page.php?page=edit_cart">Edit Cart List</a></li>
-									</ul>
-								</div>
+									<div class="megamenu mega03">
+										<div>
+											<ul class="item item03">
+												<li><a href="admin_page.php?page=order_list">Order List</a></li>
+											</ul>
+											<ul class="item item03">
+												<li><a href="admin_page.php?page=add_order_list">Add Order List</a></li>
+											</ul>
+											<ul class="item item03">
+												<li><a href="admin_page.php?page=add_order_list">Update & Edit Order List</a></li>
+											</ul>
+										</div>
+
+										<div>
+											<ul class="item item03">
+												<li><a href="admin_page.php?page=cart_list">Cart List</a></li>
+											</ul>
+											<ul class="item item03">
+												<li><a href="admin_page.php?page=add_cart">Add Cart List</a></li>
+											</ul>
+											<ul class="item item03">
+												<li><a href="admin_page.php?page=edit_cart">Edit Cart List</a></li>
+											</ul>
+										</div>
+
+									</div>
 								</li>
 							</ul>
 						</nav>
@@ -139,6 +151,9 @@
 					break;
 					case 'order_list':
 						include 'order_list.php';
+					break;
+					case 'add_order_list':
+						include 'add_order_list.php';
 					break;
 					case 'cart_list':
 						include 'cart_list.php';
