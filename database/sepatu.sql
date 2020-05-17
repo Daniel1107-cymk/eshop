@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2020 at 12:39 PM
+-- Generation Time: May 17, 2020 at 04:22 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cart` (
   `id_cart` int(11) NOT NULL,
+  `id_order` int(11) DEFAULT NULL,
   `id_member` int(11) DEFAULT NULL,
   `id_stock` int(11) DEFAULT NULL,
   `id_status_order` int(11) DEFAULT NULL,
@@ -37,6 +38,13 @@ CREATE TABLE `cart` (
   `harga_unit` float DEFAULT NULL,
   `sub_total` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id_cart`, `id_order`, `id_member`, `id_stock`, `id_status_order`, `quantity`, `harga_unit`, `sub_total`) VALUES
+(13, 2, 1, 1, 1, 3, 100, 300);
 
 -- --------------------------------------------------------
 
@@ -60,10 +68,26 @@ CREATE TABLE `gudang` (
 --
 
 INSERT INTO `gudang` (`id_stock`, `nama_item`, `deskripsi`, `id_kategori`, `id_tipe_item`, `quantity`, `harga_unit`, `gambar`) VALUES
-(1, 'Nike', 'shoe', 2, 1, 120, 100, 0x3935302d646f776e6c6f61642e6a7067),
-(2, 'Nike', 'shoe', 2, 1, 110, 100, 0x37322d646f776e6c6f61642e6a7067),
-(3, 'Nike', 'shoe', 2, 1, 110, 100, 0x3630312d646f776e6c6f61642e6a7067),
-(4, 'Nike', 'shoe', 2, 1, 110, 100, 0x3538302d646f776e6c6f61642e6a7067);
+(1, 'Nike', 'shoe', 2, 1, 120, 100, '950-download.jpg'),
+(2, 'Nike', 'shoe', 2, 1, 110, 100, '72-download.jpg'),
+(3, 'Nike', 'shoe', 2, 1, 110, 100, '601-download.jpg'),
+(4, 'Nike', 'shoe', 2, 1, 110, 100, '580-download.jpg'),
+(6, 'Puma Sport Heroes', 'Limited Summer Edition 2019', 1, 1, 1, 340000, '111-sepatu 2.png'),
+(7, 'Adidas Go Run', 'For Jogging In the Shiny Day', 2, 1, 5, 275000, '972-Sepatu 3.png'),
+(8, 'Fila Monster 2.0', 'New Stock ', 1, 1, 3, 380000, '628-Sepatu 4.png'),
+(9, 'FIla Snow White Edition', 'New Stock', 1, 1, 8, 425000, '375-sepatu 5.png'),
+(10, 'Cepyhrus 2.1', 'Winter Edition 2019', 1, 1, 4, 280000, '429-Untitled-2.png'),
+(11, 'Go Run', 'New Male Running Shoes', 1, 1, 5, 320000, '482-Untitled-3.png'),
+(12, 'Fila Shiny Light Winter Edition', 'Old Stock', 1, 1, 4, 310000, '464-Untitled-4.png'),
+(13, 'Red Fire A.20', 'New Incoming', 1, 1, 3, 340000, '869-Untitled-5.png'),
+(14, 'Nike - GORevo 2.0', 'Limited Edition', 1, 1, 3, 450000, '121-Untitled-6.png'),
+(15, 'Nike Runvolutioner 4.0', 'New Running Shoes', 1, 1, 4, 390000, '490-Untitled-7.png'),
+(16, 'Patron Running Shoes ', 'New Stock', 1, 1, 4, 420000, '361-Untitled-8.png'),
+(17, 'Nike GoLight 1.0', 'Women Day 2020 Edition ', 2, 1, 3, 380000, '972-Untitled-9.png'),
+(18, 'Go Matic', 'New Stock ', 1, 1, 4, 320000, '848-Untitled-10.png'),
+(19, 'Mens Power Classical', 'New Stock ', 1, 1, 4, 390000, '348-Untitled-12png.png'),
+(20, 'The Executive Classical Shoes ', 'New Stock ', 1, 1, 4, 420000, '38-Untitled-13psd.png'),
+(21, 'NIke GoForLight Summer 2019', 'Old Stock', 1, 1, 2, 340000, '451-Untitled-14.png');
 
 -- --------------------------------------------------------
 
@@ -75,9 +99,15 @@ CREATE TABLE `histori_trans` (
   `id_histori_trans` int(11) NOT NULL,
   `deskripsi` text DEFAULT NULL,
   `id_resi` int(11) DEFAULT NULL,
-  `id_stock` int(11) DEFAULT NULL,
   `id_member` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `histori_trans`
+--
+
+INSERT INTO `histori_trans` (`id_histori_trans`, `deskripsi`, `id_resi`, `id_member`) VALUES
+(1, '', 9, 1);
 
 -- --------------------------------------------------------
 
@@ -90,11 +120,16 @@ CREATE TABLE `invoice` (
   `kode_invoice` text DEFAULT NULL,
   `id_member` int(11) DEFAULT NULL,
   `id_order` int(11) DEFAULT NULL,
-  `id_stock` int(11) DEFAULT NULL,
-  `qty` int(11) DEFAULT NULL,
   `total_harga` float DEFAULT NULL,
   `tanggal` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `invoice`
+--
+
+INSERT INTO `invoice` (`id_invoice`, `kode_invoice`, `id_member`, `id_order`, `total_harga`, `tanggal`) VALUES
+(6, 'INV-1', 1, 1, 300, '2020-05-17');
 
 -- --------------------------------------------------------
 
@@ -134,8 +169,8 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id_login`, `username`, `password`, `id_member`, `is_admin`) VALUES
-(1, 'eko@gmail.com', '123', 1, 0),
-(2, 'admin', '123', NULL, 1);
+(1, 'admin', 'admin', NULL, 1),
+(2, 'eko', '123', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -157,8 +192,7 @@ CREATE TABLE `member` (
 --
 
 INSERT INTO `member` (`id_member`, `nama`, `member_active`, `alamat`, `email`, `tanggal_lahir`) VALUES
-(1, 'eko', 0, 'test', 'eko@gmail.com', '2020-05-14'),
-(2, 'eko', 1, 'test', 'eko@gmail.com', '2020-05-08');
+(1, 'eko', 1, 'test', 'eko@gmail.com', '2020-05-01');
 
 -- --------------------------------------------------------
 
@@ -168,14 +202,22 @@ INSERT INTO `member` (`id_member`, `nama`, `member_active`, `alamat`, `email`, `
 
 CREATE TABLE `order_list` (
   `id_order` int(11) NOT NULL,
+  `order_num` varchar(25) DEFAULT NULL,
   `deskripsi` text DEFAULT NULL,
   `id_member` int(11) DEFAULT NULL,
-  `id_stock` int(11) DEFAULT NULL,
   `id_status_order` int(11) DEFAULT NULL,
   `tanggal_order` date DEFAULT NULL,
   `tanggal_kirim` date DEFAULT NULL,
   `total_harga` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `order_list`
+--
+
+INSERT INTO `order_list` (`id_order`, `order_num`, `deskripsi`, `id_member`, `id_status_order`, `tanggal_order`, `tanggal_kirim`, `total_harga`) VALUES
+(1, 'Order-0001', 'test', 1, 2, '2020-05-01', '2020-05-18', 300),
+(2, 'Order-2', 'test', 1, 1, '2020-05-01', '2020-05-18', 300);
 
 -- --------------------------------------------------------
 
@@ -185,13 +227,21 @@ CREATE TABLE `order_list` (
 
 CREATE TABLE `resi` (
   `id_resi` int(11) NOT NULL,
-  `nomor_resi` int(11) DEFAULT NULL,
+  `nomor_resi` varchar(25) DEFAULT NULL,
   `id_member` int(11) DEFAULT NULL,
   `id_status_kirim` int(11) DEFAULT NULL,
   `id_status_trans` int(11) DEFAULT NULL,
+  `id_order` int(11) NOT NULL,
   `total_harga` float DEFAULT NULL,
   `tanggal_trans` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `resi`
+--
+
+INSERT INTO `resi` (`id_resi`, `nomor_resi`, `id_member`, `id_status_kirim`, `id_status_trans`, `id_order`, `total_harga`, `tanggal_trans`) VALUES
+(9, 'RESI-1', 1, 1, 2, 1, 300, '2020-05-17');
 
 -- --------------------------------------------------------
 
@@ -279,6 +329,7 @@ INSERT INTO `tipe_item` (`id_tipe_item`, `nama_tipe_item`) VALUES
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`id_cart`),
+  ADD KEY `id_order` (`id_order`),
   ADD KEY `id_member` (`id_member`),
   ADD KEY `id_stock` (`id_stock`),
   ADD KEY `id_status_order` (`id_status_order`);
@@ -297,8 +348,7 @@ ALTER TABLE `gudang`
 ALTER TABLE `histori_trans`
   ADD PRIMARY KEY (`id_histori_trans`),
   ADD KEY `id_member` (`id_member`),
-  ADD KEY `id_resi` (`id_resi`),
-  ADD KEY `id_stock` (`id_stock`);
+  ADD KEY `id_resi` (`id_resi`);
 
 --
 -- Indexes for table `invoice`
@@ -306,8 +356,7 @@ ALTER TABLE `histori_trans`
 ALTER TABLE `invoice`
   ADD PRIMARY KEY (`id_invoice`),
   ADD KEY `id_member` (`id_member`),
-  ADD KEY `id_order` (`id_order`),
-  ADD KEY `id_stock` (`id_stock`);
+  ADD KEY `id_order` (`id_order`);
 
 --
 -- Indexes for table `kategori`
@@ -334,7 +383,6 @@ ALTER TABLE `member`
 ALTER TABLE `order_list`
   ADD PRIMARY KEY (`id_order`),
   ADD KEY `id_member` (`id_member`),
-  ADD KEY `id_stock` (`id_stock`),
   ADD KEY `id_status_order` (`id_status_order`);
 
 --
@@ -344,7 +392,8 @@ ALTER TABLE `resi`
   ADD PRIMARY KEY (`id_resi`),
   ADD KEY `id_member` (`id_member`),
   ADD KEY `id_status_kirim` (`id_status_kirim`),
-  ADD KEY `id_status_trans` (`id_status_trans`);
+  ADD KEY `id_status_trans` (`id_status_trans`),
+  ADD KEY `id_order` (`id_order`);
 
 --
 -- Indexes for table `status_kirim`
@@ -378,25 +427,25 @@ ALTER TABLE `tipe_item`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `gudang`
 --
 ALTER TABLE `gudang`
-  MODIFY `id_stock` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_stock` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `histori_trans`
 --
 ALTER TABLE `histori_trans`
-  MODIFY `id_histori_trans` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_histori_trans` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `id_invoice` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_invoice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `kategori`
@@ -414,19 +463,19 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
-  MODIFY `id_member` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_member` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `order_list`
 --
 ALTER TABLE `order_list`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `resi`
 --
 ALTER TABLE `resi`
-  MODIFY `id_resi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_resi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `status_kirim`
@@ -460,9 +509,10 @@ ALTER TABLE `tipe_item`
 -- Constraints for table `cart`
 --
 ALTER TABLE `cart`
-  ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`id_member`) REFERENCES `member` (`id_member`),
-  ADD CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`id_stock`) REFERENCES `gudang` (`id_stock`),
-  ADD CONSTRAINT `cart_ibfk_3` FOREIGN KEY (`id_status_order`) REFERENCES `status_order` (`id_status_order`);
+  ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`id_order`) REFERENCES `order_list` (`id_order`),
+  ADD CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`id_member`) REFERENCES `member` (`id_member`),
+  ADD CONSTRAINT `cart_ibfk_3` FOREIGN KEY (`id_stock`) REFERENCES `gudang` (`id_stock`),
+  ADD CONSTRAINT `cart_ibfk_4` FOREIGN KEY (`id_status_order`) REFERENCES `status_order` (`id_status_order`);
 
 --
 -- Constraints for table `gudang`
@@ -476,16 +526,14 @@ ALTER TABLE `gudang`
 --
 ALTER TABLE `histori_trans`
   ADD CONSTRAINT `histori_trans_ibfk_1` FOREIGN KEY (`id_member`) REFERENCES `member` (`id_member`),
-  ADD CONSTRAINT `histori_trans_ibfk_2` FOREIGN KEY (`id_resi`) REFERENCES `resi` (`id_resi`),
-  ADD CONSTRAINT `histori_trans_ibfk_3` FOREIGN KEY (`id_stock`) REFERENCES `gudang` (`id_stock`);
+  ADD CONSTRAINT `histori_trans_ibfk_2` FOREIGN KEY (`id_resi`) REFERENCES `resi` (`id_resi`);
 
 --
 -- Constraints for table `invoice`
 --
 ALTER TABLE `invoice`
   ADD CONSTRAINT `invoice_ibfk_1` FOREIGN KEY (`id_member`) REFERENCES `member` (`id_member`),
-  ADD CONSTRAINT `invoice_ibfk_2` FOREIGN KEY (`id_order`) REFERENCES `order_list` (`id_order`),
-  ADD CONSTRAINT `invoice_ibfk_3` FOREIGN KEY (`id_stock`) REFERENCES `gudang` (`id_stock`);
+  ADD CONSTRAINT `invoice_ibfk_2` FOREIGN KEY (`id_order`) REFERENCES `order_list` (`id_order`);
 
 --
 -- Constraints for table `login`
@@ -498,8 +546,7 @@ ALTER TABLE `login`
 --
 ALTER TABLE `order_list`
   ADD CONSTRAINT `order_list_ibfk_1` FOREIGN KEY (`id_member`) REFERENCES `member` (`id_member`),
-  ADD CONSTRAINT `order_list_ibfk_2` FOREIGN KEY (`id_stock`) REFERENCES `gudang` (`id_stock`),
-  ADD CONSTRAINT `order_list_ibfk_3` FOREIGN KEY (`id_status_order`) REFERENCES `status_order` (`id_status_order`);
+  ADD CONSTRAINT `order_list_ibfk_2` FOREIGN KEY (`id_status_order`) REFERENCES `status_order` (`id_status_order`);
 
 --
 -- Constraints for table `resi`
@@ -507,7 +554,8 @@ ALTER TABLE `order_list`
 ALTER TABLE `resi`
   ADD CONSTRAINT `resi_ibfk_1` FOREIGN KEY (`id_member`) REFERENCES `member` (`id_member`),
   ADD CONSTRAINT `resi_ibfk_2` FOREIGN KEY (`id_status_kirim`) REFERENCES `status_kirim` (`id_status_kirim`),
-  ADD CONSTRAINT `resi_ibfk_3` FOREIGN KEY (`id_status_trans`) REFERENCES `status_trans` (`id_status_trans`);
+  ADD CONSTRAINT `resi_ibfk_3` FOREIGN KEY (`id_status_trans`) REFERENCES `status_trans` (`id_status_trans`),
+  ADD CONSTRAINT `resi_ibfk_4` FOREIGN KEY (`id_order`) REFERENCES `order_list` (`id_order`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
