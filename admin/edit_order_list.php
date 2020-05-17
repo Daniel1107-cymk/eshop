@@ -1,0 +1,56 @@
+<!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area bg-image--6">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="bradcaump__inner text-center">
+                    <h2 class="bradcaump-title">Order</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<section class="my_account_area pt--80 pb--55 bg--white">
+    <div class="container">
+        <div class="card-body table-responsive p-0">
+            
+            <table class="table table-hover table-striped table-valign-middle">
+                <thead>
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Member</th>
+                        <th>Deskripsi</th>
+                        <th>Tanggal Order</th>
+                        <th>Tanggal kirim</th>
+                        <th>Total</th>
+                        <th>Status order</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <?php
+                include '../func/koneksi.php';
+                $data = mysqli_query($koneksi, "select * from order_list INNER JOIN member ON order_list.id_member=member.id_member INNER JOIN status_order ON order_list.id_status_order=status_order.id_status_order");
+                while($d = mysqli_fetch_array($data)){
+            ?>
+                <tbody>
+                    <tr>
+                        <td><?php echo $d['order_num'] ?></td>
+                        <td><?php echo $d['nama'] ?></td>
+                        <td><?php echo $d['deskripsi'] ?></td>
+                        <td><?php echo $d['tanggal_order'] ?></td>
+                        <td><?php echo $d['tanggal_kirim'] ?></td>
+                        <td><?php echo $d['total_harga'] ?></td>
+                        <td><?php echo $d['nama_status_order'] ?></td>
+                        <td><a class="btn btn-info" href="admin_page.php?page=editorderlist&id=<?php echo $d['id_order'];?>?">EDIT</a></td>
+                        <td><a class="btn btn-success" href="../func/updatepayment.php?id=<?php echo $d['id_order'];?>">Payment</a></td>
+                    </tr>
+                </tbody>
+                <?php 
+                }
+            ?>
+            </table>
+        </div>
+    </div>
+</section>

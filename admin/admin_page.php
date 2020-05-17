@@ -71,7 +71,7 @@
 												<li><a href="admin_page.php?page=add_order_list">Add Order List</a></li>
 											</ul>
 											<ul class="item item03">
-												<li><a href="admin_page.php?page=add_order_list">Update & Edit Order List</a></li>
+												<li><a href="admin_page.php?page=edit_order_list">Update & Edit Order List</a></li>
 											</ul>
 										</div>
 
@@ -89,14 +89,14 @@
 
 									</div>
 								</li>
-								<li class="drop with--one--item"><a href="admin_page.php?page=admin_gudang">Invoice</a>
+								<li class="drop with--one--item"><a href="admin_page.php?page=invoice_list">Invoice</a>
 									<div class="megamenu mega03">
 										<ul class="item item03">
 											<li><a href="admin_page.php?page=invoice_list">Invoice list</a></li>
 										</ul>
 									</div>
 								</li>
-								<li class="drop with--one--item"><a href="admin_page.php?page=admin_gudang">Pengiriman</a>
+								<li class="drop with--one--item"><a href="admin_page.php?page=list_pengiriman">Pengiriman</a>
 									<div class="megamenu mega03">
 										<ul class="item item03">
 											<li><a href="admin_page.php?page=list_pengiriman">List Pengiriman</a></li>
@@ -169,6 +169,12 @@
 					case 'add_order_list':
 						include 'add_order_list.php';
 					break;
+					case 'edit_order_list':
+						include 'edit_order_list.php';
+					break;
+					case 'editorderlist':
+						include 'editorderlist.php';
+					break;
 					case 'cart_list':
 						include 'cart_list.php';
 					break;
@@ -180,6 +186,12 @@
 					break;
 					case 'editcart':
 						include 'editcart.php';
+					break;
+					case 'invoice_list':
+						include 'invoice_list.php';
+					break;
+					case 'list_pengiriman':
+						include 'list_pengiriman.php';
 					break;
 				}
 			}
