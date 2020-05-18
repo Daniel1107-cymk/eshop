@@ -48,12 +48,7 @@
                         <td><?php echo $d['nama_tipe_item'] ?></td>
                         <td><?php echo $d['quantity'] ?></td>
                         <td><?php echo $d['harga_unit'] ?></td>
-                        <td><?php
-						if ($d['gambar']){
-                        $img =$d['gambar'];
-						echo '<img src="$img" height="200" width="200" class="img-thumnail" />';
-						}
-                        ?></td>
+                        <td><img src="../images/produk/<?php echo $d['gambar']; ?>" style="width: 120px;"></td>
                         <td><a class="btn btn-info" href="admin_page.php?page=editgudang&id=<?php echo $d['id_stock'];?>?">EDIT</a></td>
                         <td><a class="btn btn-danger" href="../func/deletegudang.php?id=<?php echo $d['id_stock'];?>">DELETE</a></td>
                     </tr>
