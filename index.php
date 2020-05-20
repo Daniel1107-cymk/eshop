@@ -75,8 +75,8 @@ include("lib/header.php");
 					<div class="action">
 						<div class="actions_inner">
 							<ul class="add_to_links">
-								<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-								<li><a class="wishlist" href="wishlist.html"><i
+								<li><a class="cart" href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i class="bi bi-shopping-bag4"></i></a></li>
+								<li><a class="cart" href="login_page.php"><i
 											class="bi bi-shopping-cart-full"></i></a></li>
 
 								<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link"
@@ -164,9 +164,9 @@ include("lib/header.php");
 							<div class="action">
 								<div class="actions_inner">
 									<ul class="add_to_links">
-										<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
+										<li><a class="cart" href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i class="bi bi-shopping-bag4"></i></a>
 										</li>
-										<li><a class="wishlist" href="wishlist.html"><i
+										<li><a class="cart" href="login_page.php"><i
 													class="bi bi-shopping-cart-full"></i></a></li>
 
 										<li><a data-toggle="modal" title="Quick View"
@@ -208,9 +208,9 @@ include("lib/header.php");
 							<div class="action">
 								<div class="actions_inner">
 									<ul class="add_to_links">
-										<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
+										<li><a class="cart" href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i class="bi bi-shopping-bag4"></i></a>
 										</li>
-										<li><a class="wishlist" href="wishlist.html"><i
+										<li><a class="cart" href="login_page.php"><i
 													class="bi bi-shopping-cart-full"></i></a></li>
 
 										<li><a data-toggle="modal" title="Quick View"
