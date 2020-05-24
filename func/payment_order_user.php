@@ -2,7 +2,7 @@
     include_once 'koneksi.php';
 
     
-    $id =$_GET['id'];
+    $id =$_POST['id'];
     
     $query = "UPDATE order_list SET id_status_order='2' where id_order ='$id'";
     $result = mysqli_query($koneksi, $query);
@@ -59,6 +59,8 @@
         $history = "INSERT histori_trans VALUES (NULL,'','$id_last_resi','$member')";
         $result_history = mysqli_query($koneksi, $history);
     }
-    header('location:../admin/index.php?page=user_order_list');
+    // header('location:../admin/admin_page.php?page=edit_order_list');
+
+
     
 ?>  

@@ -73,13 +73,16 @@
 										</ul>
 									</div>
 								</li>
+								<li class="drop with--one--item"><a href="index.php?page=user_order_list">Orderlist</a></li>
+								<li class="drop with--one--item"><a href="index.php?page=resi_user">Resi</a></li>
+								<li class="drop with--one--item"><a href="index.php?page=history_user">History Transaksi</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="col-md-6 col-sm-6 col-6 col-lg-2">
 						<ul class="header__sidebar__right d-flex justify-content-end align-items-center">
 							<li class="wishlist"><a class="search__active" href="#"></a></li>
-							<li class="shopcart"><a class="cartbox_active" href="#"></a>
+							<li class="shopcart"><a href="index.php?page=cart_user_list"></a>
 								<!-- Start Shopping Cart -->
 								<!-- End Shopping Cart -->
 							</li>
@@ -174,6 +177,30 @@
 					break;
 					case 'home':
 						include 'home.php';
+					break;
+					case 'product':
+						include 'product.php';
+					break;
+					case 'edit_product':
+						include 'edit_product.php';
+					break;
+					case 'delete_cart':
+						include '../func/delete_cart.php';
+					break;
+					case 'cart_user_list':
+						include 'cart_user_list.php';
+					break;
+					case 'user_order_list':
+						include 'user_order_list.php';
+					break;
+					case 'resi_user':
+						include 'resi_user.php';
+					break;
+					case 'history_user':
+						include 'history_user.php';
+					break;
+					case 'order_detail':
+						include 'order_detail.php';
 					break;
 				}
 			}

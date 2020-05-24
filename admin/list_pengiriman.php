@@ -23,6 +23,7 @@
                         <th>Order</th>
                         <th>Total</th>
                         <th>Status Kirim</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <?php
@@ -37,6 +38,12 @@
                         <td><?php echo $d['order_num'] ?></td>
                         <td><?php echo $d['total_harga'] ?></td>
                         <td><?php echo $d['nama_status_kirim'] ?></td>
+                        <td>
+                            <form method="POST" action="../func/update_send_resi.php">
+                                <input name="id" type="hidden" value="<?php echo $d['id_resi']; ?>" />
+                                <button class="btn btn-success" type="submit" title="Add to Cart">Terkirim</button>
+                            </form>
+                        </td>
                     </tr>
                 </tbody>
                 <?php 

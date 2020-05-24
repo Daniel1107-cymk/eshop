@@ -47,7 +47,7 @@ include("lib/header.php");
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section__title text-center">
-					<h2 class="title__be--2">Female <span class="color--theme">Products</span></h2>
+					<h2 class="title__be--2">New <span class="color--theme">Products</span></h2>
 					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
 						lebmid alteration in some ledmid form</p>
 				</div>
@@ -64,23 +64,25 @@ include("lib/header.php");
 									?>
 			<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 				<div class="product__thumb">
-					<a class="first__img" href="single-product.html"><img
+					<a class="first__img" href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><img
 							src="images/produk/<?php echo $d['gambar']; ?>" style="width: 340px" alt=""></a>
 				</div>
 				<div class="product__content content--center">
-					<h4><a href="single-product.html"><?php echo $d['nama_item']; ?></a></h4>
+					<h4><a href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><?php echo $d['nama_item']; ?></a></h4>
 					<ul class="prize d-flex">
 						<li>Rp.<?php echo $d['harga_unit'] ?></li>
 					</ul>
 					<div class="action">
 						<div class="actions_inner">
 							<ul class="add_to_links">
-								<li><a class="cart" href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i class="bi bi-shopping-bag4"></i></a></li>
-								<li><a class="cart" href="login_page.php"><i
-											class="bi bi-shopping-cart-full"></i></a></li>
+								<li><a class="cart"
+										href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i
+											class="bi bi-shopping-bag4"></i></a></li>
+								<!-- <li><a class="cart" href="login_page.php"><i class="bi bi-shopping-cart-full"></i></a>
+								</li>
 
 								<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link"
-										href="#productmodal"><i class="bi bi-search"></i></a></li>
+										href="#productmodal"><i class="bi bi-search"></i></a></li> -->
 
 							</ul>
 						</div>
@@ -153,25 +155,27 @@ include("lib/header.php");
 						?>
 					<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="product__thumb">
-							<a class="first__img" href="single-product.html"><img
+							<a class="first__img" href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><img
 									src="images/produk/<?php echo $d['gambar']; ?>" style="width: 340px" alt=""></a>
 						</div>
 						<div class="product__content content--center">
-							<h4><a href="single-product.html"><?php echo $d['nama_item']; ?></a></h4>
+							<h4><a href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><?php echo $d['nama_item']; ?></a></h4>
 							<ul class="prize d-flex">
 								<li>Rp.<?php echo $d['harga_unit'] ?></li>
 							</ul>
 							<div class="action">
 								<div class="actions_inner">
 									<ul class="add_to_links">
-										<li><a class="cart" href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i class="bi bi-shopping-bag4"></i></a>
+										<li><a class="cart"
+												href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i
+													class="bi bi-shopping-bag4"></i></a>
 										</li>
-										<li><a class="cart" href="login_page.php"><i
+										<!-- <li><a class="cart" href="login_page.php"><i
 													class="bi bi-shopping-cart-full"></i></a></li>
 
 										<li><a data-toggle="modal" title="Quick View"
 												class="quickview modal-view detail-link" href="#productmodal"><i
-													class="bi bi-search"></i></a></li>
+													class="bi bi-search"></i></a></li> -->
 
 									</ul>
 								</div>
@@ -197,18 +201,20 @@ include("lib/header.php");
 					?>
 					<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="product__thumb">
-							<a class="first__img" href="single-product.html"><img
+							<a class="first__img" href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><img
 									src="images/produk/<?php echo $d['gambar']; ?>" style="width: 340px" alt=""></a>
 						</div>
 						<div class="product__content content--center">
-							<h4><a href="single-product.html"><?php echo $d['nama_item']; ?></a></h4>
+							<h4><a href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><?php echo $d['nama_item']; ?></a></h4>
 							<ul class="prize d-flex">
 								<li>Rp.<?php echo $d['harga_unit'] ?></li>
 							</ul>
 							<div class="action">
 								<div class="actions_inner">
 									<ul class="add_to_links">
-										<li><a class="cart" href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i class="bi bi-shopping-bag4"></i></a>
+										<li><a class="cart"
+												href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><i
+													class="bi bi-shopping-bag4"></i></a>
 										</li>
 										<li><a class="cart" href="login_page.php"><i
 													class="bi bi-shopping-cart-full"></i></a></li>
@@ -241,11 +247,11 @@ include("lib/header.php");
 									?>
 					<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="product__thumb">
-							<a class="first__img" href="single-product.html"><img
+							<a class="first__img" href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><img
 									src="images/produk/<?php echo $d['gambar']; ?>" style="width: 340px" alt=""></a>
 						</div>
 						<div class="product__content content--center">
-							<h4><a href="single-product.html"><?php echo $d['nama_item']; ?></a></h4>
+							<h4><a href="product.php?id_stock=<?php echo $d['id_stock']; ?>&id_kategori=<?php echo $d['id_kategori']; ?>"><?php echo $d['nama_item']; ?></a></h4>
 							<ul class="prize d-flex">
 								<li>Rp.<?php echo $d['harga_unit'] ?></li>
 							</ul>
@@ -254,11 +260,11 @@ include("lib/header.php");
 									<ul class="add_to_links">
 										<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
 										</li>
-										<li><a class="wishlist" href="wishlist.html"><i
+										<!-- <li><a class="wishlist" href="wishlist.html"><i
 													class="bi bi-shopping-cart-full"></i></a></li>
 										<li><a data-toggle="modal" title="Quick View"
 												class="quickview modal-view detail-link" href="#productmodal"><i
-													class="bi bi-search"></i></a></li>
+													class="bi bi-search"></i></a></li> -->
 
 									</ul>
 								</div>
