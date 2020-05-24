@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2020 at 04:22 PM
+-- Generation Time: May 24, 2020 at 08:20 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -44,7 +44,9 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id_cart`, `id_order`, `id_member`, `id_stock`, `id_status_order`, `quantity`, `harga_unit`, `sub_total`) VALUES
-(13, 2, 1, 1, 1, 3, 100, 300);
+(13, 2, 1, 1, 1, 3, 100, 300),
+(18, 6, 1, 7, 1, 1, 275000, 275000),
+(38, 6, 1, 3, 1, 3, 100, 300);
 
 -- --------------------------------------------------------
 
@@ -107,7 +109,8 @@ CREATE TABLE `histori_trans` (
 --
 
 INSERT INTO `histori_trans` (`id_histori_trans`, `deskripsi`, `id_resi`, `id_member`) VALUES
-(1, '', 9, 1);
+(5, '', 13, 1),
+(7, '', 15, 1);
 
 -- --------------------------------------------------------
 
@@ -129,7 +132,8 @@ CREATE TABLE `invoice` (
 --
 
 INSERT INTO `invoice` (`id_invoice`, `kode_invoice`, `id_member`, `id_order`, `total_harga`, `tanggal`) VALUES
-(6, 'INV-1', 1, 1, 300, '2020-05-17');
+(10, 'INV-2', 1, 2, 300, '2020-05-24'),
+(12, 'INV-3', 1, 6, 275300, '2020-05-24');
 
 -- --------------------------------------------------------
 
@@ -216,8 +220,8 @@ CREATE TABLE `order_list` (
 --
 
 INSERT INTO `order_list` (`id_order`, `order_num`, `deskripsi`, `id_member`, `id_status_order`, `tanggal_order`, `tanggal_kirim`, `total_harga`) VALUES
-(1, 'Order-0001', 'test', 1, 2, '2020-05-01', '2020-05-18', 300),
-(2, 'Order-2', 'test', 1, 1, '2020-05-01', '2020-05-18', 300);
+(2, 'Order-2', 'test', 1, 2, '2020-05-01', '2020-05-18', 300),
+(6, 'Order-3', '', 1, 3, '2020-05-24', '2020-05-31', 275300);
 
 -- --------------------------------------------------------
 
@@ -241,7 +245,8 @@ CREATE TABLE `resi` (
 --
 
 INSERT INTO `resi` (`id_resi`, `nomor_resi`, `id_member`, `id_status_kirim`, `id_status_trans`, `id_order`, `total_harga`, `tanggal_trans`) VALUES
-(9, 'RESI-1', 1, 1, 2, 1, 300, '2020-05-17');
+(13, 'RESI-2', 1, 1, 2, 2, 300, '2020-05-24'),
+(15, 'RESI-3', 1, 2, 2, 6, 275300, '2020-05-24');
 
 -- --------------------------------------------------------
 
@@ -427,7 +432,7 @@ ALTER TABLE `tipe_item`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `gudang`
@@ -439,13 +444,13 @@ ALTER TABLE `gudang`
 -- AUTO_INCREMENT for table `histori_trans`
 --
 ALTER TABLE `histori_trans`
-  MODIFY `id_histori_trans` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_histori_trans` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `id_invoice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_invoice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `kategori`
@@ -469,13 +474,13 @@ ALTER TABLE `member`
 -- AUTO_INCREMENT for table `order_list`
 --
 ALTER TABLE `order_list`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `resi`
 --
 ALTER TABLE `resi`
-  MODIFY `id_resi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_resi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `status_kirim`
