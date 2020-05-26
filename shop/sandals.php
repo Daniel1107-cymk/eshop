@@ -1,5 +1,5 @@
 <?php
-include("../lib/header.php")
+include("../lib/header_folder.php")
 ?>
 <!-- Start Bradcaump area -->
 <div class="ht__bradcaump__area bg-image--6">
@@ -171,5 +171,5 @@ include("../lib/header.php")
 <!-- End Shop Page -->
 
 <?php
-include("../lib/footer.php")
+include("../lib/footer_folder.php")
 ?>

@@ -13,7 +13,6 @@ include("lib/header.php");
 							<h2>Buy <span>your </span></h2>
 							<h2>favourite <span>Shoes </span></h2>
 							<h2>from <span>Here </span></h2>
-							<a class="shopbtn" href="#">shop now</a>
 						</div>
 					</div>
 				</div>
@@ -31,7 +30,6 @@ include("lib/header.php");
 							<h2>Buy <span>your </span></h2>
 							<h2>favourite <span>Shoes </span></h2>
 							<h2>from <span>Here </span></h2>
-							<a class="shopbtn" href="#">shop now</a>
 						</div>
 					</div>
 				</div>
