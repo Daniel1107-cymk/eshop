@@ -1,5 +1,5 @@
 <?php
-include("../lib/header_folder.php")
+include("../lib/header_user.php")
 ?>
 <!-- Start Bradcaump area -->
 <div class="ht__bradcaump__area bg-image--6">
@@ -33,13 +33,13 @@ include("../lib/header_folder.php")
 				<!-- Start Single Product -->
 				<?php
 					include '../func/koneksi.php';
-					$data = mysqli_query($koneksi, "select * from gudang where id_kategori=1");
+					$data = mysqli_query($koneksi, "select * from gudang whre id_kategori=1");
 					$id="";
 					while($d = mysqli_fetch_array($data)){
 				?>
 				<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 					<div class="product__thumb">
-						<a class="first__img" href="single-product.html"><img
+						<a class="first__img" href="index.php?page=product&id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori']?>"><img
 								src="../images/produk/<?php echo $d['gambar']; ?>" style="width: 340px" alt=""></a>
 					</div>
 					<div class="product__content content--center">
@@ -71,5 +71,5 @@ include("../lib/header_folder.php")
 <!-- End Shop Page -->
 
 <?php
-include("../lib/footer_folder.php")
+include("../lib/footer_user.php")
 ?>

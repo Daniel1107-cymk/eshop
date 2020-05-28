@@ -1,5 +1,5 @@
 <?php
-include("../lib/header_folder.php")
+include("../lib/header_user.php")
 ?>
 <!-- Start Bradcaump area -->
 <div class="ht__bradcaump__area bg-image--6">
@@ -36,18 +36,24 @@ include("../lib/header_folder.php")
 			<!-- Start Single Product -->
 			<?php
 				include '../func/koneksi.php';
-				$data = mysqli_query($koneksi, "select * from gudang where id_kategori=1 and id_tipe_item=1");
+				$data = mysqli_query($koneksi, "select * from gudang where id_kategori=2 and id_tipe_item=1");
 				$id="";
 				while($d = mysqli_fetch_array($data)){
 			?>
 			<div class="product product__style--3">
 				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 					<div class="product__thumb">
-						<a class="first__img" href="single-product.html"><img
+						<a class="first__img" href="index.php?page=product&id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori']?>"><img
 								src="../images/produk/<?php echo $d['gambar'] ?>" alt="product image"></a>
 						<!-- <div class="hot__box">
 							<span class="hot-label">BEST SALLER</span>
 						</div> -->
+					</div>
+					<div class="product__content content--center">
+						<h4><a href="single-product.html"><?php echo $d['nama_item']; ?></a></h4>
+						<ul class="prize d-flex">
+							<li>Rp.<?php echo $d['harga_unit'] ?></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -78,14 +84,14 @@ include("../lib/header_folder.php")
 			<!-- Start Single Product -->
 			<?php
 				include '../func/koneksi.php';
-				$data = mysqli_query($koneksi, "select * from gudang where id_kategori=1 and id_tipe_item=1");
+				$data = mysqli_query($koneksi, "select * from gudang where id_kategori=2 and id_tipe_item=1");
 				$id="";
 				while($d = mysqli_fetch_array($data)){
 			?>
 			<div class="product product__style--3">
 				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 					<div class="product__thumb">
-						<a class="first__img" href="single-product.html"><img
+						<a class="first__img" href="index.php?page=product&id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori']?>"><img
 								src="../images/produk/<?php echo $d['gambar'] ?>" alt="product image"></a>
 						<!-- <div class="hot__box">
 							<span class="hot-label">BEST SALLER</span>
@@ -96,18 +102,7 @@ include("../lib/header_folder.php")
 						<ul class="prize d-flex">
 							<li>Rp.<?php echo $d['harga_unit'] ?></li>
 						</ul>
-						<div class="action">
-							<div class="actions_inner">
-								<ul class="add_to_links">
-									<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-									<li><a class="wishlist" href="wishlist.html"><i
-												class="bi bi-shopping-cart-full"></i></a></li>
-									<li><a data-toggle="modal" title="Quick View"
-											class="quickview modal-view detail-link" href="#productmodal"><i
-												class="bi bi-search"></i></a></li>
-								</ul>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -137,14 +132,14 @@ include("../lib/header_folder.php")
 			<!-- Start Single Product -->
 			<?php
 				include '../func/koneksi.php';
-				$data = mysqli_query($koneksi, "select * from gudang where id_kategori=1 and id_tipe_item=1");
+				$data = mysqli_query($koneksi, "select * from gudang where id_kategori=2 and id_tipe_item=1");
 				$id="";
 				while($d = mysqli_fetch_array($data)){
 			?>
 			<div class="product product__style--3">
 				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 					<div class="product__thumb">
-						<a class="first__img" href="single-product.html"><img
+						<a class="first__img" href="index.php?page=product&id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori']?>"><img
 								src="../images/produk/<?php echo $d['gambar'] ?>" alt="product image"></a>
 						<!-- <div class="hot__box">
 							<span class="hot-label">BEST SALLER</span>
@@ -155,18 +150,7 @@ include("../lib/header_folder.php")
 						<ul class="prize d-flex">
 							<li>Rp.<?php echo $d['harga_unit'] ?></li>
 						</ul>
-						<div class="action">
-							<div class="actions_inner">
-								<ul class="add_to_links">
-									<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-									<li><a class="wishlist" href="wishlist.html"><i
-												class="bi bi-shopping-cart-full"></i></a></li>
-									<li><a data-toggle="modal" title="Quick View"
-											class="quickview modal-view detail-link" href="#productmodal"><i
-												class="bi bi-search"></i></a></li>
-								</ul>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -180,5 +164,5 @@ include("../lib/header_folder.php")
 </section>
 <!-- Start BEst Seller Area -->
 <?php
-include("../lib/footer_folder.php")
+include("../lib/footer_user.php")
 ?>

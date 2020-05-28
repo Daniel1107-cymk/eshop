@@ -59,7 +59,7 @@
         $history = "INSERT histori_trans VALUES (NULL,'','$id_last_resi','$member')";
         $result_history = mysqli_query($koneksi, $history);
     }
-    header('location:../admin/admin_page.php?page=resi_user');
+    header('location:../admin/index.php?page=user_order_list');
 
 
     

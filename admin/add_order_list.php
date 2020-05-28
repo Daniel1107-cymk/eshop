@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="bradcaump__inner text-center">
-                    <h2 class="bradcaump-title">Cart</h2>
+                    <h2 class="bradcaump-title">Order</h2>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
                 <div class="my__account__wrapper">
-                    <h3 class="account__title">Add Cart</h3>
+                    <h3 class="account__title">Add Order</h3>
                     <form method="POST" action="../func/add_order_qurey.php" enctype="multipart/form-data">
                         <div class="account__form">
                             <div class="input__box">

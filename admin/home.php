@@ -69,24 +69,7 @@
 							<ul class="prize d-flex">
 								<li>Rp.<?php echo $d['harga_unit'] ?></li>
 							</ul>
-							<div class="action">
-								<div class="actions_inner">
-									<ul class="add_to_links">
-
-										<li><a class="cart"
-												href="index.php?page=product&id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori']?>"><i
-													class="bi bi-shopping-bag4"></i></a></li>
-										<!-- <li><a class="cart" href="index.php?page=add_cart_user&id=<?php echo $d['id_stock'] ?>?>"><i class="bi bi-shopping-bag4"></i></a></li> -->
-										<li><a class="cart" href="login_page.php"><i
-													class="bi bi-shopping-cart-full"></i></a></li>
-
-										<li><a data-toggle="modal" title="Quick View"
-												class="quickview modal-view detail-link" href="#productmodal"><i
-													class="bi bi-search"></i></a></li>
-
-									</ul>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 					<?php 
@@ -169,23 +152,7 @@
 							<ul class="prize d-flex">
 								<li>Rp.<?php echo $d['harga_unit'] ?></li>
 							</ul>
-							<div class="action">
-								<div class="actions_inner">
-									<ul class="add_to_links">
-										<li><a class="cart"
-												href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i
-													class="bi bi-shopping-bag4"></i></a>
-										</li>
-										<li><a class="cart" href="login_page.php"><i
-													class="bi bi-shopping-cart-full"></i></a></li>
-
-										<li><a data-toggle="modal" title="Quick View"
-												class="quickview modal-view detail-link" href="#productmodal"><i
-													class="bi bi-search"></i></a></li>
-
-									</ul>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 					<?php 
@@ -215,23 +182,7 @@
 							<ul class="prize d-flex">
 								<li>Rp.<?php echo $d['harga_unit'] ?></li>
 							</ul>
-							<div class="action">
-								<div class="actions_inner">
-									<ul class="add_to_links">
-										<li><a class="cart"
-												href="product.php?id_stock=<?php echo $d['id_stock'] ?>&id_kategori=<?php echo $d['id_kategori'] ?>"><i
-													class="bi bi-shopping-bag4"></i></a>
-										</li>
-										<li><a class="cart" href="login_page.php"><i
-													class="bi bi-shopping-cart-full"></i></a></li>
-
-										<li><a data-toggle="modal" title="Quick View"
-												class="quickview modal-view detail-link" href="#productmodal"><i
-													class="bi bi-search"></i></a></li>
-
-									</ul>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 					<?php 
@@ -261,20 +212,7 @@
 							<ul class="prize d-flex">
 								<li>Rp.<?php echo $d['harga_unit'] ?></li>
 							</ul>
-							<div class="action">
-								<div class="actions_inner">
-									<ul class="add_to_links">
-										<li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a>
-										</li>
-										<li><a class="wishlist" href="wishlist.html"><i
-													class="bi bi-shopping-cart-full"></i></a></li>
-										<li><a data-toggle="modal" title="Quick View"
-												class="quickview modal-view detail-link" href="#productmodal"><i
-													class="bi bi-search"></i></a></li>
-
-									</ul>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 					<?php 
